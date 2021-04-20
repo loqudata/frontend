@@ -33,16 +33,21 @@ const Layout = ({
         rel="stylesheet"
       /> */}
 
-      <link
+      {/* <link
         href="https://fonts.googleapis.com/css2?family=Zilla+Slab&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet"
-      />
-      {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css" integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8=" /> */}
+      /> */}
 
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
       />
+      <script
+        async
+        defer
+        data-domain="loqudata.org"
+        src="https://metrics.loqudata.org/js/plausible.js"
+      ></script>
     </Head>
     {nav ? <Nav></Nav> : null}
     <Box as="main" w="full" maxW="100vw" p={10} {...containerProps}>

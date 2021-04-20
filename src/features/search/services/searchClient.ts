@@ -3,8 +3,8 @@ import TypesenseInstantSearchAdapter from "typesense-instantsearch-adapter"
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter(
   {
     server: {
-      // Yes, I am committing a secret, and it's bad, but by the time this is public that will have changed
-      apiKey: "aaeff9df", // Be sure to use the search-only-api-key
+      // This is the public read-only API key
+      apiKey: "Nr6gMNGdwQ3cfTqtOWMzWlZr5lLGW8CN",
       nodes: [
         {
           host: "search.loqudata.org",
