@@ -1,0 +1,94 @@
+import { ContainerLayout } from "../components/ContainerLayout"
+
+export default ContainerLayout
+
+# About
+
+Loqu is a 100% open source tool for data exploration and visualization, and includes a large dataset of statistical data from organizations from around the world.
+
+It aims to fill the gap between thinking about the  data you want and finally loading it into one of the many robust and powerful analysis tools.
+Many users experience frustration if they have to trawl through public data catalogs, download some CSV files, and load them into other tools just to visualize them. 
+
+The source code is available under the Apache 2.0 License. Data is available under the Open Database License.
+
+## FAQ
+
+### How does it work?
+
+Loqu extracts the metadata for thousands of datasets from the DBNomics project using their API.
+Then, we convert it into RDF, which allows it to be loaded into a graph database.
+From there, we [infer links](http://dice-group.github.io/LIMES/#/) from the statistical metadata to public knowledge graphs.
+This allows us to do cool things like show you the flags of countries from Wikidata.
+
+The next part you might already be familiar with: the user interface. We use Vega to build dynamic charts or graphs, and Deck.gl for maps and geographic visualizations.
+
+### What's up next?
+
+We have a public [Roadmap](./roadmap) available.
+
+
+### How can I help?
+
+Well, just by using Loqu you're helping quite a bit. Feel free to share feedback anytime; it will improve the project.
+Also, be sure to submit issues on Github if you run into any bugs.
+
+Of course, I'd also appreciate contributors that could work on the UI, data pipeline, or API. 
+
+Others could also get started on documentation, translations, or perhaps more designs/a logo. 
+
+### What's the name?
+
+Loqu is a Greek root that means **to speak**. It is found in some fabulous words like "loquacious" or "eloquent."
+
+I find it particularly apt for technology built on the Semantic Web, which aims to create descriptions of the structure and semantics (meaning) of data with reusable ontologies, and thus perhaps enhance the ability of people to communicate with data.
+
+## What Loqu is Not
+
+Loqu does not aim to be one of the following types of tools:
+
+- ETL
+- BI/complex visualization
+- Tool for cross-dataset (or graph-wide) queries
+
+If you want one of those, we recommend OpenRefine and Apache Superset.
+
+If you'd like to run queries on the entire dataset, you'd need to export all the data, something that the DBNomics project currently doesn't have good support for.
+
+<br />
+<br />
+
+## Credits
+
+Loqu wouldn't be possible without the following:
+
+### Inspiration
+
+Loqu is inspired by OpenRefine's facets browser in the design of the "Fields" view. It's also inspired by the DBNomics interface, and somewhat by the interfaces for DBPedia and Wikidata.
+
+### Software
+
+- Frontend
+  - Interface
+    - React
+    - Chakra UI
+    - Vega, Vega-Lite
+    - Uniforms
+    - Deck.gl, Maplibre-JS
+  - Data
+    - Tableschema.js
+    - Apache Arrow
+    - Comunica
+- Backend
+  - Services written in Golang and NodeJS
+  - Virtuoso (open source version)
+  - TypeSense
+- Infrastructure
+  - Google Cloud Storage
+  - Netlify
+  - Cloudflare
+
+### Data
+
+The data is from: DBNomics, DBpedia, Wikidata, Geonames, Geoboundaries, and a basemap is from CARTO.
+
+All data used is available under open licenses, and we'll only add data from public sources released under open licenses.

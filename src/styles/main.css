@@ -1,0 +1,29 @@
+html,
+body,
+#__next {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #ffffffa1; */
+}
+
+#__next {
+  display: flex;
+
+  flex-grow: 1;
+}
+
+* {
+  font-size: 12pt;
+  font-family: "Arial";
+
+  /* font-family: "Inter", "Roboto", sans-serif; */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: inherit;
+}
+
+/* .ais-Hits-list {
+
+} */

@@ -1,0 +1,388 @@
+{
+    "results": [
+        {
+            "facet_counts": [],
+            "found": 1401,
+            "hits": [
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "not significant"
+                        ],
+                        "code": "isoc_ci_eu_en2",
+                        "dimension_labels": [
+                            "Enterprise size and Nace Rev. 2",
+                            "Unit of measure",
+                            "Frequency",
+                            "Geopolitical entity (reporting)",
+                            "Information society indicator"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "indic_is",
+                            "unit",
+                            "sizen_r2",
+                            "geo"
+                        ],
+                        "id": "6882",
+                        "idx": 0,
+                        "name": "Summary of EU aggregates",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [],
+                    "text_match": 844424950816696
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "not significant",
+                            "low reliability",
+                            "break in time series",
+                            "confidential"
+                        ],
+                        "code": "isoc_ec_ibuy",
+                        "dimension_labels": [
+                            "Frequency",
+                            "Geopolitical entity (reporting)",
+                            "Individual type",
+                            "Information society indicator",
+                            "Unit of measure"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "indic_is",
+                            "ind_type",
+                            "unit",
+                            "geo"
+                        ],
+                        "id": "6941",
+                        "idx": 0,
+                        "name": "Internet purchases by individuals (until 2019)",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Internet",
+                                "purchases"
+                            ],
+                            "snippet": "<mark>Internet</mark> <mark>purchases</mark> by individuals (until 2019)",
+                            "value": "<mark>Internet</mark> <mark>purchases</mark> by individuals (until 2019)"
+                        }
+                    ],
+                    "text_match": 844424945842196
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "low reliability",
+                            "estimated",
+                            "not significant"
+                        ],
+                        "code": "isoc_ec_ibgs",
+                        "dimension_labels": [
+                            "Information society indicator",
+                            "Unit of measure",
+                            "Frequency",
+                            "Geopolitical entity (reporting)",
+                            "Individual type"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "ind_type",
+                            "indic_is",
+                            "unit",
+                            "geo"
+                        ],
+                        "id": "6937",
+                        "idx": 0,
+                        "name": "Internet purchases - goods or services (2020 onwards)",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Internet",
+                                "purchases"
+                            ],
+                            "snippet": "<mark>Internet</mark> <mark>purchases</mark> - goods or services (2020 onwards)",
+                            "value": "<mark>Internet</mark> <mark>purchases</mark> - goods or services (2020 onwards)"
+                        }
+                    ],
+                    "text_match": 844424941783944
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "break in time series",
+                            "confidential",
+                            "not significant",
+                            "low reliability"
+                        ],
+                        "code": "isoc_ec_iprb",
+                        "dimension_labels": [
+                            "Individual type",
+                            "Information society indicator",
+                            "Unit of measure",
+                            "Frequency",
+                            "Geopolitical entity (reporting)"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "indic_is",
+                            "ind_type",
+                            "unit",
+                            "geo"
+                        ],
+                        "id": "6945",
+                        "idx": 0,
+                        "name": "Problems encountered by individuals when buying/ordering over the internet",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "internet"
+                            ],
+                            "snippet": "Problems encountered by individuals when buying/ordering over the <mark>internet</mark>",
+                            "value": "Problems encountered by individuals when buying/ordering over the <mark>internet</mark>"
+                        }
+                    ],
+                    "text_match": 844424939297788
+                },
+                {
+                    "document": {
+                        "attribute_labels": [],
+                        "attribute_values": [],
+                        "code": "6_39",
+                        "dimension_labels": [
+                            "Frequency",
+                            "Territory",
+                            "Data type",
+                            "Employment size class",
+                            "NACE 2007"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "ATECO_2007",
+                            "ADDETTI",
+                            "ITTER107",
+                            "TIPO_DATO"
+                        ],
+                        "id": "12119",
+                        "idx": 0,
+                        "name": "ICT in companies with at least 10 persons employed",
+                        "provider_code": "ISTAT",
+                        "provider_name": "Italian National Institute of Statistics"
+                    },
+                    "highlights": [],
+                    "text_match": 844424939296088
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "not significant",
+                            "low reliability",
+                            "break in time series",
+                            "confidential",
+                            "estimated"
+                        ],
+                        "code": "isoc_bde15cbc",
+                        "dimension_labels": [
+                            "Geopolitical entity (reporting)",
+                            "Individual type",
+                            "Information society indicator",
+                            "Unit of measure",
+                            "Frequency"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "ind_type",
+                            "indic_is",
+                            "geo"
+                        ],
+                        "id": "6861",
+                        "idx": 0,
+                        "name": "E-banking and e-commerce",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [],
+                    "text_match": 844424934583112
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "not significant",
+                            "low reliability",
+                            "estimated"
+                        ],
+                        "code": "isoc_ec_ibm",
+                        "dimension_labels": [
+                            "Information society indicator",
+                            "Unit of measure",
+                            "Frequency",
+                            "Geopolitical entity (reporting)",
+                            "Individual type"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "ind_type",
+                            "indic_is",
+                            "unit",
+                            "geo"
+                        ],
+                        "id": "6939",
+                        "idx": 0,
+                        "name": "Internet purchases - money spent (2020 onwards)",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Internet",
+                                "purchases"
+                            ],
+                            "snippet": "<mark>Internet</mark> <mark>purchases</mark> - money spent (2020 onwards)",
+                            "value": "<mark>Internet</mark> <mark>purchases</mark> - money spent (2020 onwards)"
+                        }
+                    ],
+                    "text_match": 844424934059756
+                },
+                {
+                    "document": {
+                        "attribute_labels": [],
+                        "attribute_values": [],
+                        "code": "65_130",
+                        "dimension_labels": [
+                            "Household typology",
+                            "Data type",
+                            "Age class",
+                            "Frequency",
+                            "Territory",
+                            "Gender"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "CLASSE_ETA",
+                            "ITTER107",
+                            "SESSO",
+                            "TIPO_DATO",
+                            "TIPOLOGIA_FAM"
+                        ],
+                        "id": "12097",
+                        "idx": 0,
+                        "name": "Internet - Activities and access",
+                        "provider_code": "ISTAT",
+                        "provider_name": "Italian National Institute of Statistics"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Internet"
+                            ],
+                            "snippet": "<mark>Internet</mark> - Activities and access",
+                            "value": "<mark>Internet</mark> - Activities and access"
+                        }
+                    ],
+                    "text_match": 844424933797216
+                },
+                {
+                    "document": {
+                        "attribute_labels": [],
+                        "attribute_values": [],
+                        "code": "161_268",
+                        "dimension_labels": [
+                            "Variable",
+                            "NACE 2007",
+                            "Frequency",
+                            "Territory"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "VA",
+                            "ATECO_2007",
+                            "ITTER107"
+                        ],
+                        "id": "11893",
+                        "idx": 0,
+                        "name": "Enterprises economic indicators - reg.",
+                        "provider_code": "ISTAT",
+                        "provider_name": "Italian National Institute of Statistics"
+                    },
+                    "highlights": [],
+                    "text_match": 844424933535784
+                },
+                {
+                    "document": {
+                        "attribute_labels": [],
+                        "attribute_values": [],
+                        "code": "161_267",
+                        "dimension_labels": [
+                            "Environmental domains",
+                            "NACE 2007",
+                            "Size class of turnover",
+                            "Frequency",
+                            "Territory",
+                            "Variable",
+                            "Employment size class"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "AREA_MB",
+                            "ATECO_2007",
+                            "ADDETTI",
+                            "CLASSE_FATTURATO",
+                            "ITTER107",
+                            "VA"
+                        ],
+                        "id": "11892",
+                        "idx": 0,
+                        "name": "Enterprises economic indicators",
+                        "provider_code": "ISTAT",
+                        "provider_name": "Italian National Institute of Statistics"
+                    },
+                    "highlights": [],
+                    "text_match": 844424933535784
+                }
+            ],
+            "out_of": 15693,
+            "page": 1,
+            "request_params": {
+                "collection_name": "datasets",
+                "per_page": 10,
+                "q": "internet purchases"
+            },
+            "search_time_ms": 22
+        }
+    ]
+}

@@ -1,0 +1,386 @@
+{
+    "Axis": {
+        "additionalProperties": false,
+        "properties": {
+            "aria": {
+                "description": "A boolean flag indicating if [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) should be included (SVG output only). If `false`, the \"aria-hidden\" attribute will be set on the output SVG group, removing the axis from the ARIA accessibility tree.\n\n__Default value:__ `true`",
+                "type": "boolean"
+            },
+            "bandPosition": {
+                "description": "An interpolation fraction indicating where, for `band` scales, axis ticks should be positioned. A value of `0` places ticks at the left edge of their bands. A value of `0.5` places ticks in the middle of their bands.\n\n __Default value:__ `0.5`",
+                "type": "number"
+            },
+            "description": {
+                "description": "A text description of this axis for [ARIA accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) (SVG output only). If the `aria` property is true, for SVG output the [\"aria-label\" attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute) will be set to this description. If the description is unspecified it will be automatically generated.",
+                "type": "string"
+            },
+            "domain": {
+                "description": "A boolean flag indicating if the domain (the axis baseline) should be included as part of the axis.\n\n__Default value:__ `true`",
+                "type": "boolean"
+            },
+            "domainCap": {
+                "$ref": "#/definitions/StrokeCap",
+                "description": "The stroke cap for the domain line's ending style. One of `\"butt\"`, `\"round\"` or `\"square\"`.\n\n__Default value:__ `\"butt\"`"
+            },
+            "domainColor": {
+                "$ref": "#/definitions/Color"
+            },
+            "domainDash": {
+                "description": "An array of alternating [stroke, space] lengths for dashed domain lines.",
+                "items": {
+                    "type": "number"
+                },
+                "type": "array"
+            },
+            "domainDashOffset": {
+                "description": "The pixel offset at which to start drawing with the domain dash array.",
+                "type": "number"
+            },
+            "domainOpacity": {
+                "description": "Opacity of the axis domain line.",
+                "type": "number"
+            },
+            "domainWidth": {
+                "description": "Stroke width of axis domain line\n\n__Default value:__ `1`",
+                "type": "number"
+            },
+            "format": {
+                "anyOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "$ref": "#/definitions/Dict"
+                    }
+                ],
+                "description": "When used with the default `\"number\"` and `\"time\"` format type, the text formatting pattern for labels of guides (axes, legends, headers) and text marks.\n\n- If the format type is `\"number\"` (e.g., for quantitative fields), this is D3's [number format pattern](https://github.com/d3/d3-format#locale_format). - If the format type is `\"time\"` (e.g., for temporal fields), this is D3's [time format pattern](https://github.com/d3/d3-time-format#locale_format).\n\nSee the [format documentation](https://vega.github.io/vega-lite/docs/format.html) for more examples.\n\nWhen used with a [custom `formatType`](https://vega.github.io/vega-lite/docs/config.html#custom-format-type), this value will be passed as `format` alongside `datum.value` to the registered function.\n\n__Default value:__  Derived from [numberFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for number format and from [timeFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for time format."
+            },
+            "formatType": {
+                "description": "The format type for labels. One of `\"number\"`, `\"time\"`, or a [registered custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type).\n\n__Default value:__ - `\"time\"` for temporal fields and ordinal and nominal fields with `timeUnit`. - `\"number\"` for quantitative fields as well as ordinal and nominal fields without `timeUnit`.",
+                "type": "string"
+            },
+            "grid": {
+                "description": "A boolean flag indicating if grid lines should be included as part of the axis\n\n__Default value:__ `true` for [continuous scales](https://vega.github.io/vega-lite/docs/scale.html#continuous) that are not binned; otherwise, `false`.",
+                "type": "boolean"
+            },
+            "gridCap": {
+                "$ref": "#/definitions/StrokeCap",
+                "description": "The stroke cap for grid lines' ending style. One of `\"butt\"`, `\"round\"` or `\"square\"`.\n\n__Default value:__ `\"butt\"`"
+            },
+            "gridColor": {
+                "$ref": "#/definitions/Color"
+            },
+            "gridDash": {
+                "description": "An array of alternating [stroke, space] lengths for dashed grid lines.",
+                "items": {
+                    "type": "number"
+                },
+                "type": "array"
+            },
+            "gridDashOffset": {
+                "description": "The pixel offset at which to start drawing with the grid dash array.",
+                "type": "number"
+            },
+            "gridOpacity": {
+                "description": "The stroke opacity of grid (value between [0,1])\n\n__Default value:__ `1`",
+                "maximum": 1,
+                "minimum": 0,
+                "type": "number"
+            },
+            "gridWidth": {
+                "description": "The grid width, in pixels.\n\n__Default value:__ `1`",
+                "minimum": 0,
+                "type": "number"
+            },
+            "labelAlign": {
+                "$ref": "#/definitions/Align",
+                "description": "Horizontal text alignment of axis tick labels, overriding the default setting for the current axis orientation."
+            },
+            "labelAngle": {
+                "description": "The rotation angle of the axis labels.\n\n__Default value:__ `-90` for nominal and ordinal fields; `0` otherwise.",
+                "maximum": 360,
+                "minimum": -360,
+                "type": "number"
+            },
+            "labelBaseline": {
+                "$ref": "#/definitions/TextBaseline",
+                "description": "Vertical text baseline of axis tick labels, overriding the default setting for the current axis orientation. One of `\"alphabetic\"` (default), `\"top\"`, `\"middle\"`, `\"bottom\"`, `\"line-top\"`, or `\"line-bottom\"`. The `\"line-top\"` and `\"line-bottom\"` values operate similarly to `\"top\"` and `\"bottom\"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone."
+            },
+            "labelBound": {
+                "description": "Indicates if labels should be hidden if they exceed the axis range. If `false` (the default) no bounds overlap analysis is performed. If `true`, labels will be hidden if they exceed the axis range by more than 1 pixel. If this property is a number, it specifies the pixel tolerance: the maximum amount by which a label bounding box may exceed the axis range.\n\n__Default value:__ `false`.",
+                "type": "number"
+            },
+            "labelColor": {
+                "$ref": "#/definitions/Color"
+            },
+            "labelExpr": {
+                "description": "[Vega expression](https://vega.github.io/vega/docs/expressions/) for customizing labels.\n\n__Note:__ The label text and value can be assessed via the `label` and `value` properties of the axis's backing `datum` object.",
+                "type": "string"
+            },
+            "labelFlush": {
+                "description": "Indicates if the first and last axis labels should be aligned flush with the scale range. Flush alignment for a horizontal axis will left-align the first label and right-align the last label. For vertical axes, bottom and top text baselines are applied instead. If this property is a number, it also indicates the number of pixels by which to offset the first and last labels; for example, a value of 2 will flush-align the first and last labels and also push them 2 pixels outward from the center of the axis. The additional adjustment can sometimes help the labels better visually group with corresponding axis ticks.\n\n__Default value:__ `true` for axis of a continuous x-scale. Otherwise, `false`.",
+                "type": "boolean"
+            },
+            "labelFlushOffset": {
+                "description": "Indicates the number of pixels by which to offset flush-adjusted labels. For example, a value of `2` will push flush-adjusted labels 2 pixels outward from the center of the axis. Offsets can help the labels better visually group with corresponding axis ticks.\n\n__Default value:__ `0`.",
+                "type": "number"
+            },
+            "labelFont": {
+                "description": "The font of the tick label.",
+                "type": "string"
+            },
+            "labelFontSize": {
+                "description": "The font size of the label, in pixels.",
+                "minimum": 0,
+                "type": "number"
+            },
+            "labelFontStyle": {
+                "$ref": "#/definitions/FontStyle",
+                "description": "Font style of the title."
+            },
+            "labelFontWeight": {
+                "$ref": "#/definitions/FontWeight",
+                "description": "Font weight of axis tick labels."
+            },
+            "labelLimit": {
+                "description": "Maximum allowed pixel width of axis tick labels.\n\n__Default value:__ `180`",
+                "type": "number"
+            },
+            "labelLineHeight": {
+                "description": "Line height in pixels for multi-line label text or label text with `\"line-top\"` or `\"line-bottom\"` baseline.",
+                "type": "number"
+            },
+            "labelOffset": {
+                "description": "Position offset in pixels to apply to labels, in addition to tickOffset.\n\n__Default value:__ `0`",
+                "type": "number"
+            },
+            "labelOpacity": {
+                "description": "The opacity of the labels.",
+                "type": "number"
+            },
+            "labelOverlap": {
+                "$ref": "#/definitions/LabelOverlap"
+            },
+            "labelPadding": {
+                "description": "The padding in pixels between labels and ticks.\n\n__Default value:__ `2`",
+                "type": "number"
+            },
+            "labelSeparation": {
+                "description": "The minimum separation that must be between label bounding boxes for them to be considered non-overlapping (default `0`). This property is ignored if *labelOverlap* resolution is not enabled.",
+                "type": "number"
+            },
+            "labels": {
+                "description": "A boolean flag indicating if labels should be included as part of the axis.\n\n__Default value:__ `true`.",
+                "type": "boolean"
+            },
+            "maxExtent": {
+                "description": "The maximum extent in pixels that axis ticks and labels should use. This determines a maximum offset value for axis titles.\n\n__Default value:__ `undefined`.",
+                "type": "number"
+            },
+            "minExtent": {
+                "description": "The minimum extent in pixels that axis ticks and labels should use. This determines a minimum offset value for axis titles.\n\n__Default value:__ `30` for y-axis; `undefined` for x-axis.",
+                "type": "number"
+            },
+            "offset": {
+                "type": "number"
+            },
+            "orient": {
+                "$ref": "#/definitions/AxisOrient"
+            },
+            "position": {
+                "type": "number"
+            },
+            "style": {
+                "anyOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    }
+                ],
+                "description": "A string or array of strings indicating the name of custom styles to apply to the axis. A style is a named collection of axis property defined within the [style configuration](https://vega.github.io/vega-lite/docs/mark.html#style-config). If style is an array, later styles will override earlier styles.\n\n__Default value:__ (none) __Note:__ Any specified style will augment the default style. For example, an x-axis mark with `\"style\": \"foo\"` will use `config.axisX` and `config.style.foo` (the specified style `\"foo\"` has higher precedence)."
+            },
+            "tickBand": {
+                "description": "For band scales, indicates if ticks and grid lines should be placed at the `\"center\"` of a band (default) or at the band `\"extent\"`s to indicate intervals",
+                "enum": [
+                    "center",
+                    "extent"
+                ],
+                "type": "string"
+            },
+            "tickCap": {
+                "$ref": "#/definitions/StrokeCap",
+                "description": "The stroke cap for the tick lines' ending style. One of `\"butt\"`, `\"round\"` or `\"square\"`.\n\n__Default value:__ `\"butt\"`"
+            },
+            "tickColor": {
+                "$ref": "#/definitions/Color"
+            },
+            "tickCount": {
+                "anyOf": [
+                    {
+                        "type": "number"
+                    },
+                    {
+                        "$ref": "#/definitions/TimeInterval"
+                    },
+                    {
+                        "$ref": "#/definitions/TimeIntervalStep"
+                    }
+                ],
+                "description": "A desired number of ticks, for axes visualizing quantitative scales. The resulting number may be different so that values are \"nice\" (multiples of 2, 5, 10) and lie within the underlying scale's range.\n\nFor scales of type `\"time\"` or `\"utc\"`, the tick count can instead be a time interval specifier. Legal string values are `\"millisecond\"`, `\"second\"`, `\"minute\"`, `\"hour\"`, `\"day\"`, `\"week\"`, `\"month\"`, and `\"year\"`. Alternatively, an object-valued interval specifier of the form `{\"interval\": \"month\", \"step\": 3}` includes a desired number of interval steps. Here, ticks are generated for each quarter (Jan, Apr, Jul, Oct) boundary.\n\n__Default value__: Determine using a formula `ceil(width/40)` for x and `ceil(height/40)` for y.",
+                "minimum": 0
+            },
+            "tickDash": {
+                "description": "An array of alternating [stroke, space] lengths for dashed tick mark lines.",
+                "items": {
+                    "type": "number"
+                },
+                "type": "array"
+            },
+            "tickDashOffset": {
+                "description": "The pixel offset at which to start drawing with the tick mark dash array.",
+                "type": "number"
+            },
+            "tickExtra": {
+                "description": "Boolean flag indicating if an extra axis tick should be added for the initial position of the axis. This flag is useful for styling axes for `band` scales such that ticks are placed on band boundaries rather in the middle of a band. Use in conjunction with `\"bandPosition\": 1` and an axis `\"padding\"` value of `0`.",
+                "type": "boolean"
+            },
+            "tickMinStep": {
+                "type": "number"
+            },
+            "tickOffset": {
+                "description": "Position offset in pixels to apply to ticks, labels, and gridlines.",
+                "type": "number"
+            },
+            "tickOpacity": {
+                "description": "Opacity of the ticks.",
+                "type": "number"
+            },
+            "tickRound": {
+                "description": "Boolean flag indicating if pixel position values should be rounded to the nearest integer.\n\n__Default value:__ `true`",
+                "type": "boolean"
+            },
+            "tickSize": {
+                "description": "The size in pixels of axis ticks.\n\n__Default value:__ `5`",
+                "minimum": 0,
+                "type": "number"
+            },
+            "tickWidth": {
+                "description": "The width, in pixels, of ticks.\n\n__Default value:__ `1`",
+                "minimum": 0,
+                "type": "number"
+            },
+            "ticks": {
+                "description": "Boolean value that determines whether the axis should include ticks.\n\n__Default value:__ `true`",
+                "type": "boolean"
+            },
+            "title": {
+                "$ref": "#/definitions/Text"
+            },
+            "titleAlign": {
+                "$ref": "#/definitions/Align",
+                "description": "Horizontal text alignment of axis titles."
+            },
+            "titleAnchor": {
+                "$ref": "#/definitions/TitleAnchor",
+                "description": "Text anchor position for placing axis titles."
+            },
+            "titleAngle": {
+                "description": "Angle in degrees of axis titles.",
+                "type": "number"
+            },
+            "titleBaseline": {
+                "$ref": "#/definitions/TextBaseline",
+                "description": "Vertical text baseline for axis titles. One of `\"alphabetic\"` (default), `\"top\"`, `\"middle\"`, `\"bottom\"`, `\"line-top\"`, or `\"line-bottom\"`. The `\"line-top\"` and `\"line-bottom\"` values operate similarly to `\"top\"` and `\"bottom\"`, but are calculated relative to the *lineHeight* rather than *fontSize* alone."
+            },
+            "titleColor": {
+                "$ref": "#/definitions/Color"
+            },
+            "titleFont": {
+                "description": "Font of the title. (e.g., `\"Helvetica Neue\"`).",
+                "type": "string"
+            },
+            "titleFontSize": {
+                "description": "Font size of the title.",
+                "minimum": 0,
+                "type": "number"
+            },
+            "titleFontStyle": {
+                "$ref": "#/definitions/FontStyle",
+                "description": "Font style of the title."
+            },
+            "titleFontWeight": {
+                "$ref": "#/definitions/FontWeight",
+                "description": "Font weight of the title. This can be either a string (e.g `\"bold\"`, `\"normal\"`) or a number (`100`, `200`, `300`, ..., `900` where `\"normal\"` = `400` and `\"bold\"` = `700`)."
+            },
+            "titleLimit": {
+                "description": "Maximum allowed pixel width of axis titles.",
+                "minimum": 0,
+                "type": "number"
+            },
+            "titleLineHeight": {
+                "description": "Line height in pixels for multi-line title text or title text with `\"line-top\"` or `\"line-bottom\"` baseline.",
+                "type": "number"
+            },
+            "titleOpacity": {
+                "description": "Opacity of the axis title.",
+                "type": "number"
+            },
+            "titlePadding": {
+                "description": "The padding, in pixels, between title and axis.",
+                "type": "number"
+            },
+            "titleX": {
+                "description": "X-coordinate of the axis title relative to the axis group.",
+                "type": "number"
+            },
+            "titleY": {
+                "description": "Y-coordinate of the axis title relative to the axis group.",
+                "type": "number"
+            },
+            "translate": {
+                "description": "Coordinate space translation offset for axis layout. By default, axes are translated by a 0.5 pixel offset for both the x and y coordinates in order to align stroked lines with the pixel grid. However, for vector graphics output these pixel-specific adjustments may be undesirable, in which case translate can be changed (for example, to zero).\n\n__Default value:__ `0.5`",
+                "type": "number"
+            },
+            "values": {
+                "anyOf": [
+                    {
+                        "items": {
+                            "type": "number"
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "items": {
+                            "type": "boolean"
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "items": {
+                            "$ref": "#/definitions/DateTime"
+                        },
+                        "type": "array"
+                    }
+                ],
+                "description": "Explicitly set the visible axis tick values."
+            },
+            "zindex": {
+                "description": "A non-negative integer indicating the z-index of the axis. If zindex is 0, axes should be drawn behind all chart elements. To put them in front, set `zindex` to `1` or more.\n\n__Default value:__ `0` (behind the marks).",
+                "minimum": 0,
+                "type": "number"
+            }
+        },
+        "type": "object"
+    }
+}

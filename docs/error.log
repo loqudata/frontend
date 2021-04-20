@@ -1,0 +1,42 @@
+Uncaught Error: No newline characters found in your file...
+    sniff webpack-internal:///./node_modules/csv-sniffer/index.js:631
+    createCsvDelimiterDetector webpack-internal:///./node_modules/tableschema/lib/table.js:807
+    emit webpack-internal:///./node_modules/events/events.js:153
+    addChunk webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:299
+    readableAddChunk webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:281
+    push webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:242
+    push webpack-internal:///./node_modules/readable-stream/lib/_stream_transform.js:139
+    afterTransform webpack-internal:///./node_modules/readable-stream/lib/_stream_transform.js:88
+    _transform webpack-internal:///./node_modules/readable-stream/lib/_stream_passthrough.js:38
+    _read webpack-internal:///./node_modules/readable-stream/lib/_stream_transform.js:177
+    _write webpack-internal:///./node_modules/readable-stream/lib/_stream_transform.js:164
+    doWrite webpack-internal:///./node_modules/readable-stream/lib/_stream_writable.js:410
+    writeOrBuffer webpack-internal:///./node_modules/readable-stream/lib/_stream_writable.js:399
+    write webpack-internal:///./node_modules/readable-stream/lib/_stream_writable.js:308
+    ondata webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:682
+    emit webpack-internal:///./node_modules/events/events.js:158
+    read webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:484
+    flow webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:940
+    emitReadable_ webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:550
+    run webpack-internal:///./node_modules/process/browser.js:153
+    drainQueue webpack-internal:///./node_modules/process/browser.js:123
+    setTimeout handler*runTimeout webpack-internal:///./node_modules/process/browser.js:41
+    nextTick webpack-internal:///./node_modules/process/browser.js:143
+    maybeReadMore webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:562
+    addChunk webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:307
+    readableAddChunk webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:281
+    push webpack-internal:///./node_modules/readable-stream/lib/_stream_readable.js:242
+    _callee$ webpack-internal:///./services/table.ts:62
+    Babel 12
+    inferSchema webpack-internal:///./services/table.ts:29
+    executeAsyncOperation webpack-internal:///./node_modules/react-async-hook/dist/react-async-hook.esm.js:203
+    useAsyncInternal webpack-internal:///./node_modules/react-async-hook/dist/react-async-hook.esm.js:246
+    React 5
+    unstable_runWithPriority webpack-internal:///./node_modules/scheduler/cjs/scheduler.development.js:468
+    React 3
+    workLoop webpack-internal:///./node_modules/scheduler/cjs/scheduler.development.js:417
+    flushWork webpack-internal:///./node_modules/scheduler/cjs/scheduler.development.js:390
+    performWorkUntilDeadline webpack-internal:///./node_modules/scheduler/cjs/scheduler.development.js:157
+table.js:631:10
+Uncaught (in promise) 
+Object { _errors: [], stack: "", … }

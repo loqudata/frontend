@@ -1,0 +1,1220 @@
+{
+    "results": [
+        {
+            "facet_counts": [],
+            "found": 172,
+            "hits": [
+                {
+                    "document": {
+                        "attribute_labels": [],
+                        "attribute_values": [],
+                        "code": "deaths",
+                        "dimension_labels": [
+                            "Frequency",
+                            "Province",
+                            "Country"
+                        ],
+                        "dimension_values": [
+                            "Cote d'Ivoire",
+                            "Grenada",
+                            "Laos",
+                            "Haiti",
+                            "Jordan",
+                            "Saint Kitts and Nevis",
+                            "MS Zaandam",
+                            "Thailand",
+                            "Bahamas",
+                            "Belarus",
+                            "Spain",
+                            "Gabon",
+                            "Iraq",
+                            "Lebanon",
+                            "Holy See",
+                            "Bhutan",
+                            "Suriname",
+                            "Ukraine",
+                            "Saint Vincent and the Grenadines",
+                            "Burundi",
+                            "Bangladesh",
+                            "Micronesia",
+                            "Burma",
+                            "Mozambique",
+                            "Mauritania",
+                            "Slovakia",
+                            "Eswatini",
+                            "Tajikistan",
+                            "Bosnia and Herzegovina",
+                            "Central African Republic",
+                            "Dominican Republic",
+                            "Israel",
+                            "Mongolia",
+                            "Rwanda",
+                            "Sao Tome and Principe",
+                            "Seychelles",
+                            "Bolivia",
+                            "Georgia",
+                            "Korea, South",
+                            "Mali",
+                            "New Zealand",
+                            "Sweden",
+                            "Denmark",
+                            "France",
+                            "Paraguay",
+                            "Bulgaria",
+                            "India",
+                            "Cambodia",
+                            "Malta",
+                            "Chad",
+                            "Yemen",
+                            "Angola",
+                            "Burkina Faso",
+                            "Brazil",
+                            "Botswana",
+                            "Canada",
+                            "Diamond Princess",
+                            "Egypt",
+                            "Jamaica",
+                            "Lesotho",
+                            "Maldives",
+                            "South Sudan",
+                            "Austria",
+                            "Finland",
+                            "Ireland",
+                            "Kuwait",
+                            "Sierra Leone",
+                            "China",
+                            "Czechia",
+                            "Japan",
+                            "Nigeria",
+                            "Oman",
+                            "Philippines",
+                            "Senegal",
+                            "Chile",
+                            "Gambia",
+                            "Kyrgyzstan",
+                            "Timor-Leste",
+                            "Bahrain",
+                            "Congo (Brazzaville)",
+                            "Dominica",
+                            "Equatorial Guinea",
+                            "Malaysia",
+                            "Singapore",
+                            "Trinidad and Tobago",
+                            "Samoa",
+                            "Belize",
+                            "Switzerland",
+                            "Ghana",
+                            "Madagascar",
+                            "Mexico",
+                            "Azerbaijan",
+                            "Ecuador",
+                            "Guinea",
+                            "Guinea-Bissau",
+                            "Iceland",
+                            "Marshall Islands",
+                            "Andorra",
+                            "Belgium",
+                            "Greece",
+                            "Montenegro",
+                            "Namibia",
+                            "Portugal",
+                            "Afghanistan",
+                            "Guyana",
+                            "Italy",
+                            "Latvia",
+                            "Qatar",
+                            "Togo",
+                            "Vietnam",
+                            "Antigua and Barbuda",
+                            "Cuba",
+                            "Indonesia",
+                            "Liberia",
+                            "Nepal",
+                            "Venezuela",
+                            "Vanuatu",
+                            "Congo (Kinshasa)",
+                            "Germany",
+                            "United Kingdom",
+                            "Liechtenstein",
+                            "Somalia",
+                            "Zimbabwe",
+                            "Colombia",
+                            "Eritrea",
+                            "Honduras",
+                            "Hungary",
+                            "Poland",
+                            "Uruguay",
+                            "Albania",
+                            "Benin",
+                            "Brunei",
+                            "Morocco",
+                            "Nicaragua",
+                            "Serbia",
+                            "Australia",
+                            "Syria",
+                            "Zambia",
+                            "Cabo Verde",
+                            "Kenya",
+                            "Saint Lucia",
+                            "Sri Lanka",
+                            "West Bank and Gaza",
+                            "Slovenia",
+                            "Comoros",
+                            "Costa Rica",
+                            "Cyprus",
+                            "Algeria",
+                            "Kazakhstan",
+                            "Papua New Guinea",
+                            "Solomon Islands",
+                            "Uganda",
+                            "Croatia",
+                            "Netherlands",
+                            "Pakistan",
+                            "Russia",
+                            "South Africa",
+                            "United Arab Emirates",
+                            "Argentina",
+                            "Libya",
+                            "Lithuania",
+                            "Moldova",
+                            "Peru",
+                            "Saudi Arabia",
+                            "Tunisia",
+                            "Barbados",
+                            "Guatemala",
+                            "Iran",
+                            "Luxembourg",
+                            "North Macedonia",
+                            "Malawi",
+                            "Taiwan*",
+                            "Armenia",
+                            "Ethiopia",
+                            "Mauritius",
+                            "Romania",
+                            "El Salvador",
+                            "Tanzania",
+                            "US",
+                            "Estonia",
+                            "Norway",
+                            "Panama",
+                            "Sudan",
+                            "San Marino",
+                            "Uzbekistan",
+                            "Cameroon",
+                            "Djibouti",
+                            "Fiji",
+                            "Monaco",
+                            "Turkey",
+                            "daily",
+                            "Zhejiang",
+                            "Channel Islands",
+                            "Curacao",
+                            "Diamond Princess",
+                            "Manitoba",
+                            "New Caledonia",
+                            "Saskatchewan",
+                            "Macau",
+                            "Repatriated Travellers",
+                            "Reunion",
+                            "St Martin",
+                            "Aruba",
+                            "Falkland Islands (Malvinas)",
+                            "Faroe Islands",
+                            "Gibraltar",
+                            "Western Australia",
+                            "Quebec",
+                            "Beijing",
+                            "British Virgin Islands",
+                            "French Polynesia",
+                            "Grand Princess",
+                            "Hainan",
+                            "Jiangsu",
+                            "British Columbia",
+                            "Hebei",
+                            "Saint Barthelemy",
+                            "Ontario",
+                            "Sint Maarten",
+                            "Chongqing",
+                            "Gansu",
+                            "Guizhou",
+                            "na",
+                            "Nova Scotia",
+                            "Nunavut",
+                            "Turks and Caicos Islands",
+                            "Xinjiang",
+                            "Guadeloupe",
+                            "Guangdong",
+                            "Hunan",
+                            "Martinique",
+                            "Mayotte",
+                            "Shanghai",
+                            "Bonaire, Sint Eustatius and Saba",
+                            "Henan",
+                            "Inner Mongolia",
+                            "Ningxia",
+                            "Shaanxi",
+                            "Tasmania",
+                            "Guangxi",
+                            "Montserrat",
+                            "Tianjin",
+                            "Cayman Islands",
+                            "Heilongjiang",
+                            "Shandong",
+                            "South Australia",
+                            "Greenland",
+                            "New South Wales",
+                            "Prince Edward Island",
+                            "Queensland",
+                            "Saint Helena, Ascension and Tristan da Cunha",
+                            "Yukon",
+                            "Australian Capital Territory",
+                            "Bermuda",
+                            "Shanxi",
+                            "Tibet",
+                            "Alberta",
+                            "Hong Kong",
+                            "Isle of Man",
+                            "Northern Territory",
+                            "Anguilla",
+                            "Newfoundland and Labrador",
+                            "Qinghai",
+                            "Yunnan",
+                            "Victoria",
+                            "Wallis and Futuna",
+                            "Anhui",
+                            "Fujian",
+                            "Jiangxi",
+                            "Jilin",
+                            "New Brunswick",
+                            "Sichuan",
+                            "French Guiana",
+                            "Hubei",
+                            "Liaoning",
+                            "Northwest Territories",
+                            "Saint Pierre and Miquelon"
+                        ],
+                        "dimensions": [
+                            "frequency",
+                            "country",
+                            "province"
+                        ],
+                        "id": "12172",
+                        "idx": 0,
+                        "name": "Deaths global",
+                        "provider_code": "JHU",
+                        "provider_name": "Johns Hopkins University"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Deaths"
+                            ],
+                            "snippet": "<mark>Deaths</mark> global",
+                            "value": "<mark>Deaths</mark> global"
+                        },
+                        {
+                            "field": "code",
+                            "matched_tokens": [
+                                "deaths"
+                            ],
+                            "snippet": "<mark>deaths</mark>",
+                            "value": "<mark>deaths</mark>"
+                        }
+                    ],
+                    "text_match": 562949954072832
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "confidential",
+                            "provisional"
+                        ],
+                        "code": "tps00202",
+                        "description": "This indicator is defined as the crude death rate from suicide and intentional self-harm per 100 000 people, by age group. Figures should be interpreted with care as suicide registration methods vary between countries and over time. Moreover, the figures do not include deaths from events of undetermined intent (part of which should be considered as suicides) and attempted suicides which did not result in death.",
+                        "dimension_labels": [
+                            "Frequency",
+                            "Age class",
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure"
+                        ],
+                        "dimension_values": [
+                            "Annual",
+                            "From 15 to 19 years",
+                            "From 50 to 54 years",
+                            "85 years or over",
+                            "Estonia",
+                            "Finland",
+                            "Malta",
+                            "Poland",
+                            "Romania",
+                            "Belgium",
+                            "Spain",
+                            "France",
+                            "Lithuania",
+                            "Luxembourg",
+                            "Netherlands",
+                            "Serbia",
+                            "Slovakia",
+                            "Greece",
+                            "Croatia",
+                            "Czechia",
+                            "Switzerland",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Iceland",
+                            "United Kingdom",
+                            "Austria",
+                            "Ireland",
+                            "Italy",
+                            "Norway",
+                            "Portugal",
+                            "Sweden",
+                            "Turkey",
+                            "Denmark",
+                            "Liechtenstein",
+                            "Slovenia",
+                            "Cyprus",
+                            "European Union - 27 countries (from 2020)",
+                            "European Union - 28 countries (2013-2020)",
+                            "Hungary",
+                            "Latvia",
+                            "Bulgaria",
+                            "Intentional self-harm",
+                            "Total",
+                            "Rate"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "icd10",
+                            "sex",
+                            "age",
+                            "geo"
+                        ],
+                        "id": "10161",
+                        "idx": 0,
+                        "name": "Suicide death rate by age group",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "death"
+                            ],
+                            "snippet": "Suicide <mark>death</mark> rate by age group",
+                            "value": "Suicide <mark>death</mark> rate by age group"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "death"
+                            ],
+                            "snippet": "defined as the crude <mark>death</mark> rate from suicide and",
+                            "value": "This indicator is defined as the crude <mark>death</mark> rate from suicide and intentional self-harm per 100 000 people, by age group. Figures should be interpreted with care as suicide registration methods vary between countries and over time. Moreover, the figures do not include deaths from events of undetermined intent (part of which should be considered as suicides) and attempted suicides which did not result in <mark>death.</mark>"
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00165",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure",
+                            "Frequency",
+                            "Age class"
+                        ],
+                        "dimension_values": [
+                            "Annual",
+                            "Total",
+                            "European Union - 27 countries (from 2020)",
+                            "France",
+                            "Hungary",
+                            "Lithuania",
+                            "Romania",
+                            "Slovakia",
+                            "Belgium",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Estonia",
+                            "Iceland",
+                            "Portugal",
+                            "Sweden",
+                            "Turkey",
+                            "Greece",
+                            "Spain",
+                            "Ireland",
+                            "Norway",
+                            "Switzerland",
+                            "Italy",
+                            "Netherlands",
+                            "Poland",
+                            "Latvia",
+                            "United Kingdom",
+                            "Denmark",
+                            "Malta",
+                            "Serbia",
+                            "Slovenia",
+                            "Bulgaria",
+                            "Cyprus",
+                            "European Union - 28 countries (2013-2020)",
+                            "Finland",
+                            "Croatia",
+                            "Luxembourg",
+                            "Austria",
+                            "Czechia",
+                            "Liechtenstein",
+                            "Transport accidents (V01-V99, Y85)",
+                            "Males",
+                            "Total",
+                            "Females",
+                            "Rate"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "age",
+                            "icd10",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10135",
+                        "idx": 0,
+                        "name": "Death due to transport accidents, by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> due to transport accidents, by sex",
+                            "value": "<mark>Death</mark> due to transport accidents, by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00152",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "Age class",
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure",
+                            "Frequency"
+                        ],
+                        "dimension_values": [
+                            "Annual",
+                            "Total",
+                            "Croatia",
+                            "Liechtenstein",
+                            "Malta",
+                            "Norway",
+                            "Portugal",
+                            "Serbia",
+                            "United Kingdom",
+                            "Bulgaria",
+                            "France",
+                            "Ireland",
+                            "Italy",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Switzerland",
+                            "Cyprus",
+                            "Hungary",
+                            "Lithuania",
+                            "Latvia",
+                            "Slovenia",
+                            "Austria",
+                            "Spain",
+                            "Poland",
+                            "Slovakia",
+                            "Denmark",
+                            "Czechia",
+                            "European Union - 27 countries (from 2020)",
+                            "Iceland",
+                            "Sweden",
+                            "Belgium",
+                            "Finland",
+                            "Luxembourg",
+                            "Turkey",
+                            "European Union - 28 countries (2013-2020)",
+                            "Greece",
+                            "Netherlands",
+                            "Estonia",
+                            "Romania",
+                            "All causes of death (A00-Y89) excluding S00-T98",
+                            "Females",
+                            "Males",
+                            "Total",
+                            "Rate"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "icd10",
+                            "age",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10129",
+                        "idx": 0,
+                        "name": "Causes of death, by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "death,"
+                            ],
+                            "snippet": "Causes of <mark>death,</mark> by sex",
+                            "value": "Causes of <mark>death,</mark> by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00149",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "Frequency",
+                            "Age class",
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure"
+                        ],
+                        "dimension_values": [
+                            "Annual",
+                            "Total",
+                            "Czechia",
+                            "Ireland",
+                            "Lithuania",
+                            "Turkey",
+                            "Romania",
+                            "Slovakia",
+                            "Greece",
+                            "European Union - 28 countries (2013-2020)",
+                            "Croatia",
+                            "Hungary",
+                            "Latvia",
+                            "Portugal",
+                            "Cyprus",
+                            "Denmark",
+                            "Finland",
+                            "Austria",
+                            "Bulgaria",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Netherlands",
+                            "Poland",
+                            "United Kingdom",
+                            "Belgium",
+                            "Switzerland",
+                            "Spain",
+                            "Iceland",
+                            "Malta",
+                            "Sweden",
+                            "European Union - 27 countries (from 2020)",
+                            "Italy",
+                            "Liechtenstein",
+                            "Serbia",
+                            "Estonia",
+                            "France",
+                            "Luxembourg",
+                            "Norway",
+                            "Slovenia",
+                            "Drug dependence, toxicomania (F11-F16, F18-F19)",
+                            "Females",
+                            "Males",
+                            "Total",
+                            "Rate"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "age",
+                            "icd10",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10126",
+                        "idx": 0,
+                        "name": "Death due to drugs dependence, by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> due to drugs dependence, by sex",
+                            "value": "<mark>Death</mark> due to drugs dependence, by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00146",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "Age class",
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure",
+                            "Frequency"
+                        ],
+                        "dimension_values": [
+                            "Assault",
+                            "Females",
+                            "Males",
+                            "Total",
+                            "Rate",
+                            "Annual",
+                            "Total",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Latvia",
+                            "Turkey",
+                            "Switzerland",
+                            "Serbia",
+                            "Finland",
+                            "France",
+                            "Portugal",
+                            "Lithuania",
+                            "Luxembourg",
+                            "Sweden",
+                            "Austria",
+                            "European Union - 28 countries (2013-2020)",
+                            "Ireland",
+                            "Denmark",
+                            "Norway",
+                            "Romania",
+                            "Liechtenstein",
+                            "Poland",
+                            "Slovenia",
+                            "Belgium",
+                            "Estonia",
+                            "Spain",
+                            "European Union - 27 countries (from 2020)",
+                            "Italy",
+                            "Slovakia",
+                            "Greece",
+                            "Croatia",
+                            "Hungary",
+                            "Iceland",
+                            "Malta",
+                            "Bulgaria",
+                            "Cyprus",
+                            "Czechia",
+                            "Netherlands",
+                            "United Kingdom"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "age",
+                            "icd10",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10125",
+                        "idx": 0,
+                        "name": "Death due to homicide, assault, by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> due to homicide, assault, by sex",
+                            "value": "<mark>Death</mark> due to homicide, assault, by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00143",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "Frequency",
+                            "Age class",
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure"
+                        ],
+                        "dimension_values": [
+                            "Annual",
+                            "Total",
+                            "Bulgaria",
+                            "Finland",
+                            "Malta",
+                            "Greece",
+                            "France",
+                            "Serbia",
+                            "Slovenia",
+                            "Denmark",
+                            "Hungary",
+                            "Norway",
+                            "Slovakia",
+                            "Belgium",
+                            "Spain",
+                            "Italy",
+                            "Latvia",
+                            "Poland",
+                            "United Kingdom",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Estonia",
+                            "European Union - 28 countries (2013-2020)",
+                            "Iceland",
+                            "Lithuania",
+                            "Luxembourg",
+                            "Sweden",
+                            "Switzerland",
+                            "Cyprus",
+                            "European Union - 27 countries (from 2020)",
+                            "Ireland",
+                            "Netherlands",
+                            "Romania",
+                            "Austria",
+                            "Czechia",
+                            "Croatia",
+                            "Turkey",
+                            "Liechtenstein",
+                            "Portugal",
+                            "Human immunodeficiency virus [HIV] disease",
+                            "Total",
+                            "Females",
+                            "Males",
+                            "Rate"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "age",
+                            "icd10",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10124",
+                        "idx": 0,
+                        "name": "Death due to AIDS (HIV-disease), by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> due to AIDS (HIV-disease), by sex",
+                            "value": "<mark>Death</mark> due to AIDS (HIV-disease), by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00140",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure",
+                            "Frequency",
+                            "Age class",
+                            "Geopolitical entity (reporting)"
+                        ],
+                        "dimension_values": [
+                            "Rate",
+                            "Annual",
+                            "Total",
+                            "European Union - 28 countries (2013-2020)",
+                            "Slovenia",
+                            "Slovakia",
+                            "Estonia",
+                            "European Union - 27 countries (from 2020)",
+                            "Ireland",
+                            "Sweden",
+                            "United Kingdom",
+                            "Spain",
+                            "Malta",
+                            "Netherlands",
+                            "Turkey",
+                            "Cyprus",
+                            "Greece",
+                            "France",
+                            "Hungary",
+                            "Italy",
+                            "Norway",
+                            "Romania",
+                            "Belgium",
+                            "Czechia",
+                            "Finland",
+                            "Latvia",
+                            "Portugal",
+                            "Austria",
+                            "Switzerland",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Croatia",
+                            "Iceland",
+                            "Lithuania",
+                            "Luxembourg",
+                            "Bulgaria",
+                            "Denmark",
+                            "Liechtenstein",
+                            "Poland",
+                            "Serbia",
+                            "Mental and behavioural disorders due to use of alcohol",
+                            "Females",
+                            "Males",
+                            "Total"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "age",
+                            "icd10",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10123",
+                        "idx": 0,
+                        "name": "Death due to alcoholic abuse, by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> due to alcoholic abuse, by sex",
+                            "value": "<mark>Death</mark> due to alcoholic abuse, by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00137",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "Frequency",
+                            "Age class",
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex",
+                            "Unit of measure"
+                        ],
+                        "dimension_values": [
+                            "Spain",
+                            "Iceland",
+                            "Latvia",
+                            "Malta",
+                            "Slovenia",
+                            "Austria",
+                            "Czechia",
+                            "Denmark",
+                            "Belgium",
+                            "Cyprus",
+                            "Estonia",
+                            "Hungary",
+                            "Bulgaria",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "France",
+                            "Croatia",
+                            "Italy",
+                            "Norway",
+                            "United Kingdom",
+                            "Greece",
+                            "European Union - 28 countries (2013-2020)",
+                            "Lithuania",
+                            "Netherlands",
+                            "Poland",
+                            "Romania",
+                            "Switzerland",
+                            "Liechtenstein",
+                            "Luxembourg",
+                            "Serbia",
+                            "Sweden",
+                            "Turkey",
+                            "European Union - 27 countries (from 2020)",
+                            "Finland",
+                            "Ireland",
+                            "Portugal",
+                            "Slovakia",
+                            "Diabetes mellitus",
+                            "Females",
+                            "Males",
+                            "Total",
+                            "Rate",
+                            "Annual",
+                            "Total"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "age",
+                            "icd10",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10122",
+                        "idx": 0,
+                        "name": "Death due to diabetes mellitus, by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> due to diabetes mellitus, by sex",
+                            "value": "<mark>Death</mark> due to diabetes mellitus, by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                },
+                {
+                    "document": {
+                        "attribute_labels": [
+                            "Observation Status"
+                        ],
+                        "attribute_values": [
+                            "definition differs (see metadata)",
+                            "provisional"
+                        ],
+                        "code": "tps00134",
+                        "description": "Death rate of a population adjusted to a standard age distribution. As most causes of death vary significantly with people's age and sex, the use of standardised death rates improves comparability over time and between countries, as they aim at measuring death rates independently of different age structures of populations. The standardised death rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of death are available in the database (under the heading 'Data').",
+                        "dimension_labels": [
+                            "Unit of measure",
+                            "Frequency",
+                            "Age class",
+                            "Geopolitical entity (reporting)",
+                            "International Statistical Classification of Diseases and Related Health Problems (ICD-10 2010)",
+                            "Sex"
+                        ],
+                        "dimension_values": [
+                            "Females",
+                            "Males",
+                            "Total",
+                            "Rate",
+                            "Annual",
+                            "Total",
+                            "Finland",
+                            "France",
+                            "Hungary",
+                            "Liechtenstein",
+                            "Latvia",
+                            "Norway",
+                            "Austria",
+                            "European Union - 27 countries (from 2020)",
+                            "Netherlands",
+                            "Portugal",
+                            "Bulgaria",
+                            "Denmark",
+                            "Lithuania",
+                            "Sweden",
+                            "Switzerland",
+                            "Cyprus",
+                            "Slovenia",
+                            "Belgium",
+                            "Czechia",
+                            "European Union - 28 countries (2013-2020)",
+                            "Malta",
+                            "Slovakia",
+                            "Germany (until 1990 former territory of the FRG)",
+                            "Estonia",
+                            "Greece",
+                            "Ireland",
+                            "Serbia",
+                            "Croatia",
+                            "Iceland",
+                            "Italy",
+                            "Luxembourg",
+                            "Romania",
+                            "United Kingdom",
+                            "Spain",
+                            "Poland",
+                            "Turkey",
+                            "Diseases of the nervous system and the sense organs (G00-H95)"
+                        ],
+                        "dimensions": [
+                            "FREQ",
+                            "unit",
+                            "age",
+                            "icd10",
+                            "sex",
+                            "geo"
+                        ],
+                        "id": "10121",
+                        "idx": 0,
+                        "name": "Death due to diseases of the nervous system, by sex",
+                        "provider_code": "Eurostat",
+                        "provider_name": "Eurostat"
+                    },
+                    "highlights": [
+                        {
+                            "field": "name",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> due to diseases of the nervous system, by sex",
+                            "value": "<mark>Death</mark> due to diseases of the nervous system, by sex"
+                        },
+                        {
+                            "field": "description",
+                            "matched_tokens": [
+                                "Death"
+                            ],
+                            "snippet": "<mark>Death</mark> rate of a population",
+                            "value": "<mark>Death</mark> rate of a population adjusted to a standard age distribution. As most causes of <mark>death</mark> vary significantly with people's age and sex, the use of standardised <mark>death</mark> rates improves comparability over time and between countries, as they aim at measuring <mark>death</mark> rates independently of different age structures of populations. The standardised <mark>death</mark> rates used here are calculated on the basis of a standard European population (defined by the World Health Organization). Detailed data for 65 causes of <mark>death</mark> are available in the database (under the heading 'Data')."
+                        }
+                    ],
+                    "text_match": 562949953943552
+                }
+            ],
+            "out_of": 15693,
+            "page": 1,
+            "request_params": {
+                "collection_name": "datasets",
+                "per_page": 10,
+                "q": "weath"
+            },
+            "search_time_ms": 2
+        }
+    ]
+}
