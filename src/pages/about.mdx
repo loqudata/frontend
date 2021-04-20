@@ -6,8 +6,8 @@ export default ContainerLayout
 
 Loqu is a 100% open source tool for data exploration and visualization, and includes a large dataset of statistical data from organizations from around the world.
 
-It aims to fill the gap between thinking about the  data you want and finally loading it into one of the many robust and powerful analysis tools.
-Many users experience frustration if they have to trawl through public data catalogs, download some CSV files, and load them into other tools just to visualize them. 
+Loqu decreases the time between looking for data and starting to analyze it. Now you can avoid trawling through public data catalogs, downloading many CSV files,
+and then having to load them into a separate tool just to visualize the data.
 
 The source code is available under the Apache 2.0 License. Data is available under the Open Database License.
 
@@ -18,23 +18,47 @@ The source code is available under the Apache 2.0 License. Data is available und
 Loqu extracts the metadata for thousands of datasets from the DBNomics project using their API.
 Then, we convert it into RDF, which allows it to be loaded into a graph database.
 From there, we [infer links](http://dice-group.github.io/LIMES/#/) from the statistical metadata to public knowledge graphs.
-This allows us to do cool things like show you the flags of countries from Wikidata.
+This allows us to do cool things like show you the flags of countries by querying Wikidata, and generally augment the  metadata with information from the
+outside world.
 
-The next part you might already be familiar with: the user interface. We use Vega to build dynamic charts or graphs, and Deck.gl for maps and geographic visualizations.
+<!-- Or [FIBO](https://spec.edmcouncil.org/fibo/) [AGROVOC](http://agroportal.lirmm.fr/ontologies/AGROVOC) -->
 
-### What's up next?
+You can guess the next part: it's the the user interface. We use Vega to build dynamic charts or graphs, and Deck.gl for maps and geographic visualizations.
 
-We have a public [Roadmap](./roadmap) available.
+If you'd like more details on all this, you can [read the paper](https://alexkreidler.github.io/loqu-paper/).
 
+<!-- **Side Note**: I'm planning on also linking to Geonames and LinkedGeoData, and then investigating linking concepts and code list values to ontologies like
+FIBO (legal entities/finance), AGROVOC (agriculture), FoodOn (more general food).
+There are probably lots of other topics covered in the DBNomics data where there are good ontologies that could be linked to, so suggestions would be welcome. -->
 
 ### How can I help?
 
-Well, just by using Loqu you're helping quite a bit. Feel free to share feedback anytime; it will improve the project.
+Well, just by using Loqu you're helping quite a bit. Feel free to share feedback anytime -- it will undoubtedly improve the project.
 Also, be sure to submit issues on Github if you run into any bugs.
 
 Of course, I'd also appreciate contributors that could work on the UI, data pipeline, or API. 
 
 Others could also get started on documentation, translations, or perhaps more designs/a logo. 
+
+
+### What's up next?
+
+<!-- We have a public [Roadmap](./roadmap) available. -->
+
+Some of the larger TODOs are as follows, sorted roughly by their priority:
+
+- switch the CSV parser/field inference to Apache Arrow in Rust via WebAssembly (I've already started this) to get better performance on larger files
+- improve the visualization editor by integrating a GUI form tool, and allowing users to write JSON-based Vega templates (again, started a while back)
+- fetch source data from DBNomics in a tabular format for data-cube visualizations (needs upstream work)
+- achieve fuller compliance with the Data Cube and CSVW specs
+- allow users to sign in and save visualizations
+- investigate GraphQL-LD and rethink the APIs
+- switch the hacky geographic visualization code over Deck.gl with Kepler.gl and think about how to expose geographic visualizations to users, perhaps [vega-deck.gl](https://github.com/microsoft/SandDance/tree/master/packages/vega-deck.gl)
+- federate metadata as well as data so users could run their own instances of Loqu to create metadata, or use Loqu to visualize data with externally provided metadata
+
+### Who made this?
+
+[Alex Kreidler](https://alexkreidler.com/) Feel free to reach out on Github or via email at alex@ my domain.
 
 ### What's the name?
 
