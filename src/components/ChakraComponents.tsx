@@ -5,6 +5,7 @@ import {
   ListItem,
   UnorderedList,
   Heading,
+  Link,
 } from "@chakra-ui/react"
 import React from "react"
 
@@ -40,6 +41,13 @@ export const components = {
   HeaderText: ({ children }: { children: React.ReactElement }) => (
     <Heading>{children}</Heading>
   ),
+  a: ({
+    children,
+    href,
+  }: {
+    children: React.ReactElement
+    href: string
+  }) => <Link href={href}>{children}</Link>,
   //   Section,
   //   Layout,
 }

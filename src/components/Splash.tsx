@@ -31,7 +31,7 @@ export const Splash = ({ ...props }) => {
           // fontStyle="italic"
           fontWeight="bold"
         >
-          Loqu Data
+          LoquData
         </Heading>
         {/* <Heading size="4xl" fontWeight="medium">
         Data

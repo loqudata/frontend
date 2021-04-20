@@ -14,6 +14,13 @@ export const theme = extendTheme({
     mono: "Menlo, monospace",
   },
   colors,
+  components: {
+    Link: {
+      baseStyle: {
+        color: "pink.500",
+      },
+    },
+  },
   styles: {
     global: {
       svg: {

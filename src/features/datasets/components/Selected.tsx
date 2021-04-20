@@ -5,10 +5,12 @@ import React, { useEffect, useState } from "react"
 import {
   getNumSelected,
   getSeriesConstraints,
+  openSelected,
 } from "../services/getNumSelected"
 import { useRouter } from "next/router"
 import { normalizeQuery } from "src/services/utils"
 import { useDebounce } from "../hooks/useDebounce"
+import { getSeries } from "src/services/series"
 
 function numberValuesSelected(s: SelectedValues) {
   let numSelected = 0
@@ -22,29 +24,6 @@ function numberValuesSelected(s: SelectedValues) {
     }
   }
   return numSelected
-}
-
-function openSelected(s: SelectedValues) {
-  for (const key in s) {
-    const codeList = s[key]
-    for (const valKey in codeList) {
-      const val = codeList[valKey]
-      if (val) {
-        const url =
-          window.location.protocol +
-          "//" +
-          window.location.host +
-          "/" +
-          window.location.pathname +
-          key +
-          "/" +
-          valKey
-        console.log(url)
-
-        // open(url, "_blank")
-      }
-    }
-  }
 }
 
 export const SelectedView = ({
@@ -109,9 +88,11 @@ export const SelectedContainer = ({
     )
   }, [constraints])
 
+  const os = openSelected(provider, dataset)
+
   return (
     <SelectedView
-      openSelected={() => openSelected(selected)}
+      openSelected={() => os(selected)}
       numSeriesSelected={numSeriesSelected}
       numValuesSelected={numberValuesSelected(selected)}
     ></SelectedView>

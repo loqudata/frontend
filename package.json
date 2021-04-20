@@ -55,7 +55,7 @@
     "react-instantsearch-dom": "^6.10.3",
     "react-map-gl": "^6.1.12",
     "react-select": "^4.3.0",
-    "react-selectable-fast": "alexkreidler/react-selectable-fast#deploy",
+    "react-selectable-fast": "alexkreidler/react-selectable-fast#376e915",
     "react-vega": "^7.4.2",
     "react-virtualized": "^9.22.3",
     "readable-web-to-node-stream": "^3.0.1",

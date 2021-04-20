@@ -18,7 +18,7 @@ const NavEntries = [
 export const Nav = () => {
   const { pathname } = useRouter()
   return (
-    <Flex p={6} boxShadow="sm" borderRadius={4}>
+    <Flex p={6} px={10} boxShadow="sm" borderRadius={4}>
       <Box flexGrow={1}>
         <Link href="/">
           <Heading size="md" letterSpacing="tighter" cursor="pointer">

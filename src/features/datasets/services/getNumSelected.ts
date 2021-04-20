@@ -1,6 +1,8 @@
 import axios from "axios"
 import { SelectedValues } from "./state"
 import { Endpoints } from "src/services/config/endpoints"
+import { Series, SeriesResponse } from "src/services/dbnomics/series"
+// import { SeriesResponse } from "src/services/dbnomics/series"
 
 export function getSeriesConstraints(s: SelectedValues): string {
   const seriesConstraints = []
@@ -37,5 +39,50 @@ export async function getNumSelected(
     console.warn(url, error)
 
     return 0
+  }
+}
+
+export async function getSeries(
+  provider: string,
+  dataset: string,
+  seriesConstraints: string
+): Promise<Series[]> {
+  const url =
+    Endpoints.DBNomics +
+    `series/${provider}/${dataset}/${seriesConstraints}`
+  try {
+    const out = await axios.get<SeriesResponse>(url)
+    if (out.status != 200) {
+      // or message contains "not found"
+      return []
+    }
+    return out.data.series.docs
+  } catch (error) {
+    console.warn(url, error)
+
+    return []
+  }
+}
+
+export const openSelected = (
+  provider: string,
+  dataset: string
+) => async (s: SelectedValues) => {
+  const cs = getSeriesConstraints(s)
+  const ser = await getSeries(provider, dataset, cs)
+  for (const series of ser) {
+    const an = window.location.toString()
+    const loc = new URL(an)
+    loc.hash = ""
+    loc.pathname =
+      series.provider_code +
+      "/" +
+      series.dataset_code +
+      "/" +
+      series.series_code
+    const x = loc.toString()
+    // console.log(x)
+
+    open(x, "_blank")
   }
 }

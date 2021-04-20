@@ -8,11 +8,18 @@ import { Splash } from "src/components/Splash"
 
 const sections = [
   {
-    title: "Featured",
+    title: "Visualize External Data with Data Cube View",
     comp: () => (
-      <Flex alignItems="center" justifyContent="center" h="full">
-        Your recommendations here...
-      </Flex>
+      <Link href={"/table"}>
+        <Flex
+          alignItems="center"
+          justifyContent="center"
+          h="full"
+          cursor="pointer"
+        >
+          <Image src="/images/visualize.png" maxW="md"></Image>
+        </Flex>
+      </Link>
     ),
   },
   {

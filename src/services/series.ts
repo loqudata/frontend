@@ -15,11 +15,15 @@ export interface SeriesSpec {
 
 /** Gets a single series */
 export async function getSeries(spec: SeriesSpec) {
+  // console.log(spec)
+
   const { provider, series, dataset } = spec
-  const out = await get<SeriesResponse>(
+  const url =
     Endpoints.DBNomics +
-      `series/${provider}/${dataset}/${series}?observations=true`
-  )
+    `series/${provider}/${dataset}/${series}?observations=true`
+  // console.log(url)
+
+  const out = await get<SeriesResponse>(url)
   if (out.series.num_found < 1) {
     throw new Error(
       `Didn't find any series for query ${JSON.stringify(spec)}`

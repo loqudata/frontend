@@ -8617,7 +8617,7 @@ react-select@^4.3.0:
     react-input-autosize "^3.0.0"
     react-transition-group "^4.3.0"
 
-react-selectable-fast@alexkreidler/react-selectable-fast#deploy:
+react-selectable-fast@alexkreidler/react-selectable-fast#376e915:
   version "3.4.0"
   resolved "https://codeload.github.com/alexkreidler/react-selectable-fast/tar.gz/376e915f956115f6846bd5732ef386ff37e7a134"
 
