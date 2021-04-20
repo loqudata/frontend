@@ -10,7 +10,6 @@ import {
 import { useRouter } from "next/router"
 import { normalizeQuery } from "src/services/utils"
 import { useDebounce } from "../hooks/useDebounce"
-import { getSeries } from "src/services/series"
 
 function numberValuesSelected(s: SelectedValues) {
   let numSelected = 0
