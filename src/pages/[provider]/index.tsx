@@ -20,7 +20,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     // but also resources which would be impossible to prerender
     fallback: false,
   }
-  console.log(JSON.stringify(rv, undefined, 4))
 
   return rv
 }
