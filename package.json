@@ -8,7 +8,7 @@
     "start": "next start",
     "type-check": "tsc",
     "clean": "rimraf .next node_modules",
-    "export": "next build && next export",
+    "export": "next build && next export && cp _redirects out",
     "lintfix": "eslint . --ext js,jsx,ts,tsx --fix",
     "gen-model": "quicktype ./services/definitions.schema.json --src-lang schema --just-types -l typescript --out services/tableSchema.ts"
   },
