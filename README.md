@@ -1,6 +1,6 @@
 # Loqu Frontend
 
-[Loqu](https://loqudata.org/) is a 100% open source tool for data exploration and visualization, and includes 700 million data series from organizations from around the world.
+[Loqu](https://loqudata.org/) is a 100% open source tool for data exploration and visualization, and includes 700 million data series from statistical organizations around the world
 
 Loqu decreases the time between looking for data and starting to analyze it. Now you can avoid trawling through public data catalogs, downloading many CSV files, and then having to load them into a separate tool just to visualize the data.
 
