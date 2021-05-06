@@ -3,6 +3,7 @@ import { Box, Flex } from "@chakra-ui/react"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import React from "react"
+import { ABOUT_PAGE_LOCATION } from "src/services/config/app"
 
 const NavEntries = [
   {
@@ -11,7 +12,7 @@ const NavEntries = [
   },
   {
     title: "About",
-    path: "/about",
+    path: ABOUT_PAGE_LOCATION,
   },
 ]
 

@@ -5,6 +5,7 @@ import Link from "next/link"
 import React from "react"
 import Layout from "src/components/Layout"
 import { Splash } from "src/components/Splash"
+import { ABOUT_PAGE_LOCATION } from "src/services/config/app"
 
 const sections = [
   {
@@ -88,7 +89,7 @@ export default function HomePage() {
             Dive into the details on the source data, how Loqu works,
             and what it'll look like in the future.
           </Text>
-          <Link href="/about">
+          <Link href={ABOUT_PAGE_LOCATION}>
             <Button colorScheme="teal">About</Button>
           </Link>
         </Stack>
