@@ -8,49 +8,51 @@ export const Splash = ({ ...props }) => {
   return (
     <Flex
       {...props}
-      minH="70vh"
-      mt={-10}
       w="90vw"
+      minH="30vh"
+      my={24}
+      mt={12}
       mx="auto"
       justify="center"
       align="center"
-      direction={{ base: "column", md: "row" }}
+      direction="column"
     >
-      <Stack
-        spacing={6}
-        my={{ base: 6, lg: 24 }}
-        mr={{ base: 0, md: 12, lg: 24 }}
-        maxW={{ base: "100%", md: "50%" }}
-      >
+      <Box mb={12} textAlign="center">
         <Heading
+          mb={6}
           size="4xl"
           letterSpacing="tighter"
           // as="span"
-          // fontFamily="Poppins"
+          fontFamily="Merriweather"
           // color="teal.400"
           // fontStyle="italic"
           fontWeight="bold"
         >
-          LoquData
+          A world of data
         </Heading>
-        {/* <Heading size="4xl" fontWeight="medium">
-        Data
-      </Heading> */}
-        <Text fontSize="2xl" maxW="lg">
-          Explore and visualize{" "}
-          <Text
-            as="span"
-            fontSize="2xl"
-            fontWeight="extrabold"
-            color="teal.500"
+        <Heading
+          size="lg"
+          fontFamily="Manrope"
+          fontWeight="bold"
+          letterSpacing="tight"
+          maxW="3xl"
+        >
+          Over{" "}
+          <Heading
+            display="inline"
+            size="lg"
+            fontFamily="Manrope"
+            fontWeight="bold"
+            letterSpacing="tight"
+            color="pink.500"
           >
-            776 million
-          </Text>{" "}
-          data series from statistical organizations around the world.
-        </Text>
-        <Text fontSize="2xl">100% free and open source.</Text>
-        <AutoComplete></AutoComplete>
-      </Stack>
+            700,000,000
+          </Heading>{" "}
+          data series from governments, statistical organizations, and
+          other public sources
+        </Heading>
+        {/* <AutoComplete></AutoComplete> */}
+      </Box>
 
       {/* Seems like Firefox and Chrome are different about maxWidth inside a Flex element */}
       <Box width={{ base: "md", md: "2xl" }} color="pink.500">

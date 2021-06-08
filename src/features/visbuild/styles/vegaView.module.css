@@ -1,0 +1,24 @@
+.vegaView {
+  min-width: 60%;
+  max-width: 80%;
+  height: 70vh;
+
+  max-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1224px) {
+  .vegaView {
+    height: fit-content;
+    max-width: unset;
+    width: 100%;
+  }
+}
+/* .vegaView > div {
+  margin: 1%;
+} */

@@ -42,7 +42,7 @@ const sections = [
 
 export default function HomePage() {
   return (
-    <Layout containerProps={{ p: 0 }}>
+    <Layout containerProps={{ p: 0 }} navShadow={false}>
       <Splash></Splash>
       <Box
         // bgGradient="linear(to-r, pink.500, blue.500, teal.500)"

@@ -1,0 +1,17 @@
+.split {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1224px) {
+  .split {
+    flex-direction: column;
+  }
+  .split > div:first-child {
+    order: 2;
+  }
+}
+
+.details {
+  margin-bottom: 1rem;
+}

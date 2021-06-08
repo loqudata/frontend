@@ -16,18 +16,23 @@ const NavEntries = [
   },
 ]
 
-export const Nav = () => {
+export const Nav = ({ shadow = true }: { shadow?: boolean }) => {
   const { pathname } = useRouter()
   return (
-    <Flex p={6} px={10} boxShadow="sm" borderRadius={4}>
+    <Flex
+      p={6}
+      px={10}
+      boxShadow={shadow ? "sm" : ""}
+      borderRadius={4}
+    >
       <Box flexGrow={1}>
         <Link href="/">
-          <Heading size="md" letterSpacing="tighter" cursor="pointer">
+          <Heading size="lg" letterSpacing="tighter" cursor="pointer">
             LoquData
           </Heading>
         </Link>
       </Box>
-      <Flex>
+      <Flex alignItems="center">
         {NavEntries.map((e) => (
           <Link href={e.path} key={e.title}>
             <Heading
@@ -36,6 +41,7 @@ export const Nav = () => {
               size="sm"
               letterSpacing="tighter"
               color={pathname == e.path ? "pink.500" : "unset"}
+              height="fit-content"
             >
               {e.title}
             </Heading>

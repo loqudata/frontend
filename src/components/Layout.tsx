@@ -11,12 +11,28 @@ type Props = {
   title?: string
   containerProps?: FlexProps
   nav?: boolean
+  navShadow?: boolean
 }
+
+const makeFullFont = (font: string) =>
+  `family=${font}:wght@200;300;400;500;600;700;800`
+const makeGoogleFontsURL = (fontFamilies: string[]) =>
+  `https://fonts.googleapis.com/css2?${makeFullFont(
+    fontFamilies[0]
+  )}${
+    fontFamilies.length > 1
+      ? fontFamilies
+          .slice(1)
+          .map((f) => "&" + makeFullFont(f))
+          .join("")
+      : ""
+  }&display=swap`
 
 const Layout = ({
   children,
   title = APP_NAME,
   nav = true,
+  navShadow = true,
   containerProps,
 }: Props) => (
   <Flex w="full" direction="column">
@@ -32,11 +48,29 @@ const Layout = ({
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Inter:wght@300;400;500;700;900&display=swap"
         rel="stylesheet"
       /> */}
+      {/* <link rel="preconnect" href="https://fonts.gstatic.com"> */}
+      <link
+        href={makeGoogleFontsURL([
+          // Geometrics
+          // "Rubik",
+          "Manrope",
+          // more straight
+          "Inter",
+          // "Heebo",
+          // "Karla",
+          // "Archivo",
+          // "Arimo",
+          // serifs
+          "Merriweather",
+        ])}
+        rel="stylesheet"
+      ></link>
 
       {/* <link
         href="https://fonts.googleapis.com/css2?family=Zilla+Slab&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet"
       /> */}
+      {/* <script src="../services/sjsonnet.js"></script> */}
 
       <link
         rel="stylesheet"
@@ -49,7 +83,7 @@ const Layout = ({
         src="https://metrics.loqudata.org/js/plausible.js"
       ></script>
     </Head>
-    {nav ? <Nav></Nav> : null}
+    {nav ? <Nav shadow={navShadow}></Nav> : null}
     <Box as="main" w="full" maxW="100vw" p={10} {...containerProps}>
       {children}
     </Box>

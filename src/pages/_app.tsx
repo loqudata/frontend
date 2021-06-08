@@ -16,6 +16,9 @@ import "setimmediate"
 import { components } from "src/components/ChakraComponents"
 
 import "react-virtualized/styles.css"
+
+import "semantic-ui-css/semantic.min.css"
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>

@@ -10,7 +10,7 @@ const colors = {
 export const theme = extendTheme({
   fonts: {
     body: "Arial, sans-serif",
-    heading: "fonts.body",
+    heading: "Inter",
     mono: "Menlo, monospace",
   },
   colors,
