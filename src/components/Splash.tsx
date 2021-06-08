@@ -1,19 +1,20 @@
 /** The splash page */
 
 import React from "react"
-import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/layout"
+import { Box, Flex, Heading } from "@chakra-ui/layout"
 import VisualizeDiagram from "../assets/visualize.svg"
-import AutoComplete from "../features/search/components/Autocomplete"
+import { Map } from "src/features/map/components/Map"
+// import AutoComplete from "../features/search/components/Autocomplete"
 export const Splash = ({ ...props }) => {
   return (
     <Flex
       {...props}
       w="90vw"
       minH="30vh"
-      my={24}
-      mt={12}
+      mt={6}
+      mb={-10}
       mx="auto"
-      justify="center"
+      // justify="center"
       align="center"
       direction="column"
     >
@@ -30,14 +31,24 @@ export const Splash = ({ ...props }) => {
         >
           A world of data
         </Heading>
+        {/* <Heading
+          size="lg"
+          fontFamily="Manrope"
+          fontWeight="bold"
+          letterSpacing="tight"
+          maxW="4xl"
+        >
+          The easiest way to combine public datasets
+          {/* mash-up, combine, connect 
+        </Heading> */}
         <Heading
           size="lg"
           fontFamily="Manrope"
           fontWeight="bold"
           letterSpacing="tight"
-          maxW="3xl"
+          maxW="4xl"
         >
-          Over{" "}
+          Explore and visualize over{" "}
           <Heading
             display="inline"
             size="lg"
@@ -55,8 +66,15 @@ export const Splash = ({ ...props }) => {
       </Box>
 
       {/* Seems like Firefox and Chrome are different about maxWidth inside a Flex element */}
-      <Box width={{ base: "md", md: "2xl" }} color="pink.500">
-        <VisualizeDiagram></VisualizeDiagram>
+      <Box
+        width="80%"
+        h="lg"
+        color="pink.500"
+        borderRadius={3}
+        boxShadow="lg"
+      >
+        {/* <VisualizeDiagram></VisualizeDiagram> */}
+        <Map countries={{}}></Map>
       </Box>
     </Flex>
   )
