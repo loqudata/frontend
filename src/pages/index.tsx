@@ -84,7 +84,7 @@ const Feature = ({ feature }: { feature: Feature }) => (
       {feature.title}
     </Heading>
     <Text
-      fontFamily="Inter"
+      // fontFamily="Inter"
       color="gray.600"
       // p={6}
       textAlign="center"
@@ -100,9 +100,9 @@ export default function HomePage() {
     <Layout containerProps={{ p: 0 }} navShadow={false}>
       <Splash></Splash>
       <Box
-        // bgGradient="linear(to-r, pink.500, blue.500, teal.500)"
-        // backgroundColor="gray.100"
-        backgroundColor="#f9fafc"
+        // bgGradient="linear(to-r, pink.500, blue.500, teal.600)"
+        backgroundColor="gray.50"
+        // backgroundColor="#f9fafc"
         // opacity="70%"
         p={10}
         pt={24}
@@ -111,7 +111,7 @@ export default function HomePage() {
           mb={16}
           size="xl"
           textAlign="center"
-          color="teal.500"
+          color="gray.700"
           // mb={4}
         >
           {/* What people are saying */}

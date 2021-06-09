@@ -22,7 +22,7 @@ const footerSections = [
 
 export const Footer = () => {
   return (
-    <Flex as="footer" p={8} px={10} background="gray.100">
+    <Flex as="footer" p={8} px={10} backgroundColor="gray.50">
       {/* <hr /> */}
 
       <Box flexGrow={1}>

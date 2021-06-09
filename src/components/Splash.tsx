@@ -44,7 +44,7 @@ export const Splash = ({ ...props }) => {
         <Heading
           size="lg"
           fontFamily="Manrope"
-          fontWeight="bold"
+          fontWeight="normal"
           letterSpacing="tight"
           maxW="4xl"
         >
@@ -69,7 +69,7 @@ export const Splash = ({ ...props }) => {
       <Box
         width="80%"
         h="lg"
-        color="pink.500"
+        // color="pink.500"
         borderRadius={3}
         boxShadow="lg"
       >

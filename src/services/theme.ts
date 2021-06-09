@@ -10,14 +10,25 @@ const colors = {
 export const theme = extendTheme({
   fonts: {
     body: "Arial, sans-serif",
-    heading: "Inter",
+    heading: "Manrope",
     mono: "Menlo, monospace",
   },
   colors,
   components: {
     Link: {
       baseStyle: {
-        color: "pink.500",
+        color: "blue.500",
+      },
+    },
+    Text: {
+      baseStyle: {
+        // letterSpacing: "tight",
+        // fontWeight: "normal",
+      },
+    },
+    Heading: {
+      baseStyle: {
+        // fontWeight: "normal",
       },
     },
   },

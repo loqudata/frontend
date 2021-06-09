@@ -40,7 +40,7 @@ export const Nav = ({ shadow = true }: { shadow?: boolean }) => {
               mr={4}
               size="sm"
               letterSpacing="tighter"
-              color={pathname == e.path ? "pink.500" : "unset"}
+              color={pathname == e.path ? "teal.600" : "unset"}
               height="fit-content"
             >
               {e.title}

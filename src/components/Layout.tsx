@@ -54,6 +54,7 @@ const Layout = ({
           // Geometrics
           // "Rubik",
           "Manrope",
+          "Poppins",
           // more straight
           "Inter",
           // "Heebo",
@@ -84,7 +85,14 @@ const Layout = ({
       ></script>
     </Head>
     {nav ? <Nav shadow={navShadow}></Nav> : null}
-    <Box as="main" w="full" maxW="100vw" p={10} {...containerProps}>
+    <Box
+      as="main"
+      w="full"
+      maxW="100vw"
+      p={10}
+      h="full"
+      {...containerProps}
+    >
       {children}
     </Box>
     {!containerProps ? <Spacer></Spacer> : null}
