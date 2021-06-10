@@ -11,7 +11,7 @@ const SeriesPage = () => {
   const [dataset, setDataset] = useState("")
   const [data, setData] = useState<SeriesSpec | undefined>(undefined)
   return (
-    <Layout title="Search">
+    <Layout title="Series">
       <Stack spacing={6}>
         <Heading size="xl">Series</Heading>
         <Text>Here you can input a series ID to visualize it</Text>

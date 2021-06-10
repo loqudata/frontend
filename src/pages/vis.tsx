@@ -8,7 +8,6 @@ const vis = () => {
   return (
     <Layout title="Visualization Editor">
       <Stack spacing={6}>
-        <Heading size="xl">Visualization Editor</Heading>
         <Editor></Editor>
       </Stack>
     </Layout>

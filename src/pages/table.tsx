@@ -20,10 +20,8 @@ const TablePage = () => {
   return (
     <Layout title={title}>
       <Stack spacing={4}>
-        <Heading size="xl">{title}</Heading>
-
         <Text>
-          Add the data URL below. Or choose an example:{" "}
+          Input a URL or choose an example to visualize a data cube:{" "}
           {examples.map((ex) => (
             <Button mr={2} onClick={() => setURL(ex)} key={ex}>
               {basename(ex).split(".")[0]}

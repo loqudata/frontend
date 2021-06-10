@@ -4,16 +4,13 @@ import { Links } from "src/features/linker/components/Links"
 
 const LinkPage = () => (
   <Layout
-    title="Link"
+    title="Link to External Data"
     containerProps={{
       flexGrow: 1,
       display: "flex",
       flexDir: "column",
     }}
   >
-    <Heading fontSize="2xl" mb={2}>
-      Linker
-    </Heading>
     <Text>
       Create links from our metadata to other sources, like DBPedia,
       Geonames, or Wikidata

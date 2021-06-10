@@ -16,7 +16,13 @@ const NavEntries = [
   },
 ]
 
-export const Nav = ({ shadow = true }: { shadow?: boolean }) => {
+export const Nav = ({
+  shadow = true,
+  title,
+}: {
+  shadow?: boolean
+  title?: string
+}) => {
   const { pathname } = useRouter()
   return (
     <Flex
@@ -27,9 +33,22 @@ export const Nav = ({ shadow = true }: { shadow?: boolean }) => {
     >
       <Box flexGrow={1}>
         <Link href="/">
-          <Heading size="lg" letterSpacing="tighter" cursor="pointer">
-            LoquData
-          </Heading>
+          <Flex alignItems="center">
+            <Heading
+              size="lg"
+              letterSpacing="tighter"
+              cursor="pointer"
+            >
+              LoquData
+            </Heading>
+
+            {/* TODO: Right now we put the page title next to the app title. May want to have just page title. (home for home) */}
+            {title ? (
+              <Heading ml={2} size="md" letterSpacing="tight">
+                | {title}
+              </Heading>
+            ) : null}
+          </Flex>
         </Link>
       </Box>
       <Flex alignItems="center">

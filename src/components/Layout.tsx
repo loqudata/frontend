@@ -84,12 +84,18 @@ const Layout = ({
         src="https://metrics.loqudata.org/js/plausible.js"
       ></script>
     </Head>
-    {nav ? <Nav shadow={navShadow}></Nav> : null}
+    {nav ? (
+      <Nav
+        shadow={navShadow}
+        title={title != APP_NAME ? title : undefined}
+      ></Nav>
+    ) : null}
     <Box
       as="main"
       w="full"
       maxW="100vw"
       p={10}
+      pt={5}
       h="full"
       {...containerProps}
     >
