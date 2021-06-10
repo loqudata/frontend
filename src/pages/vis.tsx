@@ -6,7 +6,7 @@ import { Heading } from "@chakra-ui/react"
 import Layout from "../components/Layout"
 const vis = () => {
   return (
-    <Layout title="Search">
+    <Layout title="Visualization Editor">
       <Stack spacing={6}>
         <Heading size="xl">Visualization Editor</Heading>
         <Editor></Editor>

@@ -14,9 +14,10 @@ import { AutoFormProps } from "uniforms"
 // import { capitalCase } from "change-case"
 
 import schema from "vega-schemas/vl_5_transformed.json"
-import styles from "../styles/form.module.css"
 
 import { Accordion } from "semantic-ui-react"
+import React from "react"
+import { Box, Heading } from "@chakra-ui/react"
 
 const ns = schema as any
 ns["$ref"] = "#/definitions/Axis"
@@ -84,23 +85,32 @@ function VegaForm<T>(props: Partial<AutoFormProps<T>>) {
           )
 
           return (
-            <div className={styles.formContainer}>
-              <h4>Axis Editor</h4>
-              <div className={styles.formContent}>
-                <AutoForm {...opts} schema={data.result}>
-                  <GroupedFields
-                    groups={axisGroups.map((a) => ({
-                      name: a.toUpperCase(),
-                      prefix: a,
-                    }))}
-                    schemaObj={ns.definitions.Axis.properties}
-                  ></GroupedFields>
-                  {/* <AutoFields /> */}
-                  <ErrorsField />
-                  <SubmitField />
-                </AutoForm>
-              </div>
-            </div>
+            <Box w="30%">
+              <Box
+                // maxH="70vh"
+                backgroundColor="gray.50"
+                borderRadius="md"
+                p={6}
+                mr={8}
+                overflow="scroll"
+              >
+                <Heading size="md">Axis Editor</Heading>
+                <Box>
+                  <AutoForm {...opts} schema={data.result}>
+                    <GroupedFields
+                      groups={axisGroups.map((a) => ({
+                        name: a.toUpperCase(),
+                        prefix: a,
+                      }))}
+                      schemaObj={ns.definitions.Axis.properties}
+                    ></GroupedFields>
+                    {/* <AutoFields /> */}
+                    <ErrorsField />
+                    <SubmitField />
+                  </AutoForm>
+                </Box>
+              </Box>
+            </Box>
           )
         })()}
     </>

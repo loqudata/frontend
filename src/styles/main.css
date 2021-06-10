@@ -12,18 +12,3 @@ body,
 
   flex-grow: 1;
 }
-
-* {
-  font-size: 12pt;
-  /* font-family: "Arial"; */
-
-  /* font-family: "Inter", "Roboto", sans-serif; */
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: inherit;
-}
-
-/* .ais-Hits-list {
-
-} */

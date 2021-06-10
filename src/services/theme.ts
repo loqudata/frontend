@@ -10,7 +10,7 @@ const colors = {
 export const theme = extendTheme({
   fonts: {
     body: "Arial, sans-serif",
-    heading: "Manrope",
+    heading: "Inter",
     mono: "Menlo, monospace",
   },
   colors,
@@ -22,12 +22,14 @@ export const theme = extendTheme({
     },
     Text: {
       baseStyle: {
+        fontSize: "lg",
         // letterSpacing: "tight",
         // fontWeight: "normal",
       },
     },
     Heading: {
       baseStyle: {
+        fontSize: "",
         // fontWeight: "normal",
       },
     },

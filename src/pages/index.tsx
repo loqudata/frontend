@@ -80,7 +80,13 @@ const Feature = ({ feature }: { feature: Feature }) => (
     >
       <Icon as={feature.icon} w={8} h={8} color="white"></Icon>
     </Flex>
-    <Heading size="lg" textAlign="center" mt={6} mb={4}>
+    <Heading
+      fontFamily="Manrope"
+      size="lg"
+      textAlign="center"
+      mt={6}
+      mb={4}
+    >
       {feature.title}
     </Heading>
     <Text
@@ -112,6 +118,7 @@ export default function HomePage() {
           size="xl"
           textAlign="center"
           color="gray.700"
+          // fontFamily="Manrope"
           // mb={4}
         >
           {/* What people are saying */}
