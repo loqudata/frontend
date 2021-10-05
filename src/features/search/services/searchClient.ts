@@ -4,7 +4,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter(
   {
     server: {
       // This is the public read-only API key
-      apiKey: "Nr6gMNGdwQ3cfTqtOWMzWlZr5lLGW8CN",
+      apiKey: process.env.NEXT_PUBLIC_TYPESENSE_READ_API_KEY,
       nodes: [
         {
           host: "search.loqudata.org",
