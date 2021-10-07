@@ -2,7 +2,7 @@
 
 import React from "react"
 import { Box, Flex, Heading } from "@chakra-ui/layout"
-import VisualizeDiagram from "../assets/visualize.svg"
+// import VisualizeDiagram from "../assets/visualize.svg"
 import { Map } from "src/features/map/components/Map"
 // import AutoComplete from "../features/search/components/Autocomplete"
 export const Splash = ({ ...props }) => {
@@ -42,25 +42,24 @@ export const Splash = ({ ...props }) => {
           {/* mash-up, combine, connect 
         </Heading> */}
         <Heading
-          size="lg"
-          fontFamily="Manrope"
+          size="xl"
+          fontFamily="DM Sans"
           fontWeight="normal"
           letterSpacing="tight"
-          maxW="4xl"
+          maxW="5xl"
         >
-          Explore and visualize over{" "}
-          <Heading
+          {/* <Heading
             display="inline"
             size="lg"
-            fontFamily="Manrope"
+            fontFamily="DM Sans"
             fontWeight="bold"
             letterSpacing="tight"
             color="pink.500"
           >
-            700,000,000
-          </Heading>{" "}
-          data series from governments, statistical organizations, and
-          other public sources
+          </Heading> */}
+          Explore and visualize over 700,000,000 data series from
+          governments, statistical organizations, and other public
+          sources
         </Heading>
         {/* <AutoComplete></AutoComplete> */}
       </Box>

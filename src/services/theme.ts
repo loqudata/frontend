@@ -9,8 +9,8 @@ const colors = {
 }
 export const theme = extendTheme({
   fonts: {
-    body: "Arial, sans-serif",
-    heading: "Inter",
+    body: "DM Sans, sans-serif",
+    heading: "Archivo",
     mono: "Menlo, monospace",
   },
   colors,

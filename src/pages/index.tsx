@@ -81,7 +81,7 @@ const Feature = ({ feature }: { feature: Feature }) => (
       <Icon as={feature.icon} w={8} h={8} color="white"></Icon>
     </Flex>
     <Heading
-      fontFamily="Manrope"
+      // fontFamily="Archivo"
       size="lg"
       textAlign="center"
       mt={6}
@@ -90,7 +90,7 @@ const Feature = ({ feature }: { feature: Feature }) => (
       {feature.title}
     </Heading>
     <Text
-      // fontFamily="Inter"
+      fontFamily="DM Sans"
       color="gray.600"
       // p={6}
       textAlign="center"
@@ -107,7 +107,7 @@ export default function HomePage() {
       <Splash></Splash>
       <Box
         // bgGradient="linear(to-r, pink.500, blue.500, teal.600)"
-        backgroundColor="gray.50"
+        backgroundColor="teal.50"
         // backgroundColor="#f9fafc"
         // opacity="70%"
         p={10}

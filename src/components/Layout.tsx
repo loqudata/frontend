@@ -55,11 +55,12 @@ const Layout = ({
           // "Rubik",
           "Manrope",
           "Poppins",
+          "DM Sans",
           // more straight
           "Inter",
           // "Heebo",
-          // "Karla",
-          // "Archivo",
+          "Karla",
+          "Archivo",
           // "Arimo",
           // serifs
           "Merriweather",
@@ -77,12 +78,12 @@ const Layout = ({
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
       />
-      <script
+      {/* <script
         async
         defer
         data-domain="loqudata.org"
         src="https://metrics.loqudata.org/js/plausible.js"
-      ></script>
+      ></script> */}
     </Head>
     {nav ? (
       <Nav
