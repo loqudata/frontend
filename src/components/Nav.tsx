@@ -1,7 +1,7 @@
 import { Heading } from "@chakra-ui/layout"
 import { Box, Flex } from "@chakra-ui/react"
 import Link from "next/link"
-import { useRouter } from "next/router"
+// import { useRouter } from "next/router"
 import React from "react"
 import { ABOUT_PAGE_LOCATION } from "src/services/config/app"
 
@@ -23,7 +23,7 @@ export const Nav = ({
   shadow?: boolean
   title?: string
 }) => {
-  const { pathname } = useRouter()
+  // const pathname =  useRouter ? useRouter().pathname : ""
   return (
     <Flex
       p={6}
@@ -59,7 +59,7 @@ export const Nav = ({
               mr={4}
               size="sm"
               letterSpacing="tighter"
-              color={pathname == e.path ? "teal.600" : "unset"}
+              // color={pathname == e.path ? "teal.600" : "unset"}
               height="fit-content"
             >
               {e.title}

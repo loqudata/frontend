@@ -19,15 +19,31 @@ import "react-virtualized/styles.css"
 
 import "semantic-ui-css/semantic.min.css"
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+// import { Buffer } from "buffer"
+// //@ts-ignore
+// window.Buffer = Buffer
+
+import React from "react"
+
+export const CoreApp = ({
+  children,
+}: {
+  children: React.ReactNode
+}) => {
   return (
     <ChakraProvider theme={theme}>
       <MDXProvider components={components}>
-        <DndProvider backend={HTML5Backend}>
-          <Component {...pageProps} />
-        </DndProvider>
+        <DndProvider backend={HTML5Backend}>{children}</DndProvider>
       </MDXProvider>
     </ChakraProvider>
+  )
+}
+
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  return (
+    <CoreApp>
+      <Component {...pageProps} />
+    </CoreApp>
   )
 }
 

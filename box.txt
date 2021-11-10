@@ -1,0 +1,30 @@
+
+        <Box
+          backgroundColor="white"
+          border="1px solid lightgrey"
+          borderRadius="lg"
+          mb={3}
+          cursor="pointer"
+          _hover={{
+            boxShadow: "sm"
+          }}
+        >
+          <Image
+            height="100px"
+            width="100%"
+            src="https://www.imf.org/assets/imf/images/footer/IMF_seal.svg"
+            p={4}
+          />
+          <Box p={5} backgroundColor="gray.50">
+            <Heading size="md">
+              International Monetary Fund
+              <Badge ml={2} borderRadius="lg" py={1} px={2} colorScheme="green">
+                {/* All Good */}
+                OK
+              </Badge>
+            </Heading>
+            {/* <Stack direction="row">
+            </Stack> */}
+            <Text color="gray.600">international organization</Text>
+          </Box>
+        </Box>
