@@ -1,4 +1,10 @@
-import { Box, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/layout"
+import {
+  Box,
+  Heading,
+  SimpleGrid,
+  Text,
+  VStack,
+} from "@chakra-ui/layout"
 import { Flex, Tag } from "@chakra-ui/react"
 import React from "react"
 import { BasicDoc, HitsProvided } from "react-instantsearch-core"
@@ -19,7 +25,7 @@ const Hl = ({ hit }: { hit: any }) => {
     return (
       <Box>
         <Text
-          color="gray.500"
+          color="gray.700"
           isTruncated
           noOfLines={3}
           whiteSpace="break-spaces"
@@ -27,9 +33,9 @@ const Hl = ({ hit }: { hit: any }) => {
         >
           <Text
             as="span"
-            fontWeight="bold"
+            // fontWeight="bold"
             fontSize="sm"
-            color="gray.700"
+            color="gray.500"
           >
             Description:{" "}
           </Text>
@@ -61,23 +67,46 @@ const Hit = ({ hit }: { hit: NormalDataset }) => {
     <Box minW="md" p="4" borderRadius="lg" boxShadow="base">
       {/* <Tag> {hit.provider_code.toUpperCase()}</Tag>{" "} */}
       <VStack spacing={2} alignItems="initial">
-      <Heading size="md" display="inline">
-        {/* {hit.name} */}
-
-        <Highlight hit={hit} attribute="name" />
-      </Heading>
-      <Hl hit={hit} />
-      <Text fontSize="sm">
-        <Text
-          fontSize="sm"
-          as="span"
-          fontWeight="bold"
-          color="gray.700"
-        >
-          Created at:
-        </Text>{" "}
-        {new Date(hit.created_at * 1000).toLocaleDateString()}
-      </Text>
+        <Flex>
+          <Heading size="md" display="inline" flexGrow={1}>
+            {/* {hit.name} */}
+            <Highlight hit={hit} attribute="name" />
+          </Heading>
+          <Text fontSize="sm" display="inline">
+            {/* TODO: use human-readable */}
+            {hit.portal_source}
+          </Text>
+        </Flex>
+        <Hl hit={hit} />
+        <Text fontSize="sm">
+          <Text
+            fontSize="sm"
+            as="span"
+            // fontWeight="bold"
+            color="gray.500"
+          >
+            Created:
+          </Text>{" "}
+          {new Date(hit.created_at * 1000).toLocaleDateString()}{" "}
+          <Text
+            fontSize="sm"
+            as="span"
+            // fontWeight="bold"
+            color="gray.500"
+          >
+            Updated:
+          </Text>{" "}
+          {new Date(hit.updated_at * 1000).toLocaleDateString()}{" "}
+          <Text
+            fontSize="sm"
+            as="span"
+            // fontWeight="bold"
+            color="gray.500"
+          >
+            Update Frequency:
+          </Text>{" "}
+          {hit.update_frequency}
+        </Text>
       </VStack>
     </Box>
   )
