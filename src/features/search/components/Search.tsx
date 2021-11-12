@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/layout"
+import { Box, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/layout"
 import { Flex, Tag } from "@chakra-ui/react"
 import React from "react"
 import { BasicDoc, HitsProvided } from "react-instantsearch-core"
@@ -17,22 +17,26 @@ import { Dataset, NormalDataset } from "../services/typesenseModel"
 const Hl = ({ hit }: { hit: any }) => {
   if (hit.description) {
     return (
-    (<Box>
-      <Text>
-      <Text as="span" fontWeight="bold" size="xs" color="gray.700">
-        Description:{" "}
-      </Text>
-      {(
-        <Highlight
-          hit={hit}
-          attribute="description"
+      <Box>
+        <Text
           color="gray.500"
-        />
-      ) || hit.description}
-      </Text>
-    </Box>
-
-    ))
+          isTruncated
+          noOfLines={3}
+          whiteSpace="break-spaces"
+          fontSize="sm"
+        >
+          <Text
+            as="span"
+            fontWeight="bold"
+            fontSize="sm"
+            color="gray.700"
+          >
+            Description:{" "}
+          </Text>
+          {hit.description}
+        </Text>
+      </Box>
+    )
   } else {
     return null
   }
@@ -56,18 +60,25 @@ const Hit = ({ hit }: { hit: NormalDataset }) => {
   return (
     <Box minW="md" p="4" borderRadius="lg" boxShadow="base">
       {/* <Tag> {hit.provider_code.toUpperCase()}</Tag>{" "} */}
-      <Heading size="sm" display="inline">
+      <VStack spacing={2} alignItems="initial">
+      <Heading size="md" display="inline">
         {/* {hit.name} */}
 
         <Highlight hit={hit} attribute="name" />
       </Heading>
       <Hl hit={hit} />
-      <Text size="xs">
-        <Text as="span" fontWeight="bold" color="gray.700">
+      <Text fontSize="sm">
+        <Text
+          fontSize="sm"
+          as="span"
+          fontWeight="bold"
+          color="gray.700"
+        >
           Created at:
         </Text>{" "}
         {new Date(hit.created_at * 1000).toLocaleDateString()}
       </Text>
+      </VStack>
     </Box>
   )
 }
