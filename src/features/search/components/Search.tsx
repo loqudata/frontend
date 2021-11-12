@@ -16,6 +16,7 @@ import {
   Stats,
   HitsPerPage,
   SortBy,
+  RefinementList,
 } from "react-instantsearch-dom"
 import { searchClient } from "../services/searchClient"
 import { Dataset, NormalDataset } from "../services/typesenseModel"
@@ -52,7 +53,7 @@ const BasicHits = ({ hits }: HitsProvided<NormalDataset>) => {
   console.log(hits[0])
 
   return (
-    <SimpleGrid columns={[2, null, 3, null, 4]} spacing="2">
+    <SimpleGrid columns={[1, null, null, 2, null, 3]} spacing="2">
       {hits.map((hit) => (
         <Hit hit={hit} key={hit.objectID} />
       ))}
@@ -159,7 +160,32 @@ export const Search = () => (
           />
         </Flex>
       </Flex>
-      <CustomHits />
+      <Flex>
+        <Box w="15%" pt={4} pr={4}>
+          {/* TODO: make filters a dropdown on mobile */}
+          <Heading>Filters</Heading>
+          <Heading mt={5} mb={1} size="sm" color="gray.500">{"Data Sources".toUpperCase()}</Heading>
+          <RefinementList
+            attribute="portal_source"
+            limit={10}
+            showMore={true}
+
+          />
+          <Heading mt={5} mb={1} size="sm" color="gray.500">{"Formats".toUpperCase()}</Heading>
+          <RefinementList
+            attribute="formats"
+            limit={5}
+          />
+          <Heading mt={5} mb={1} size="sm" color="gray.500">{"Update Frequency".toUpperCase()}</Heading>
+          <RefinementList
+            attribute="update_frequency"
+            limit={5}
+          />
+        </Box>
+        <Box w="80%" pt={4}>
+          <CustomHits />
+        </Box>
+      </Flex>
     </InstantSearch>
   </>
 )

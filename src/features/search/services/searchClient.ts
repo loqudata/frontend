@@ -23,6 +23,12 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter(
 
       exclude_fields: "dimension_values",
     },
+
+  collectionSpecificSearchParameters: {
+    datasets_2: {
+      queryBy: "name,description,portal_source"
+    }
+  }
   }
 )
 export const searchClient = typesenseInstantsearchAdapter.searchClient
