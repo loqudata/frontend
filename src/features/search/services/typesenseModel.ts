@@ -13,3 +13,15 @@ export interface Dataset {
   attribute_labels: string[]
   attribute_values: string[]
 }
+
+export interface NormalDataset {
+  id:               string;
+  name:             string;
+  description:      string;
+  created_at:       number;
+  updated_at:       number;
+  update_frequency: string;
+  formats:          string[];
+  portal_source:    string;
+  portal_type:      string;
+}

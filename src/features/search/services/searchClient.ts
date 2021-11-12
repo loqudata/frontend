@@ -17,9 +17,10 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter(
     //  So you can pass any parameters supported by the search endpoint below.
     //  queryBy is required.
     additionalSearchParameters: {
-      queryBy: "name,description,dimension_values,dimension_labels",
+      // queryBy: "name,description,dimension_values,dimension_labels",
       // group_by: "provider_code",
       // group_limit: 2,
+
       exclude_fields: "dimension_values",
     },
   }
